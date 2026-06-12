@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Elver Tobo — Backend Developer",
+  title: "Elver Tobo — Software Engineer | AI Agents | Python | 2× AWS Certified",
   description:
-    "Backend systems, cloud products, APIs, and AI-powered tools.",
+    "End-to-end products with AI, RAG, agents, and AWS cloud.",
 };
 
 export default function RootLayout({
