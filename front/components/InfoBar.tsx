@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Mail } from "lucide-react";
 import BrandIcon from "@/components/BrandIcon";
 import Container from "@/components/Container";
@@ -64,17 +65,21 @@ export default function InfoBar({ dict }: InfoBarProps) {
       <div className="overflow-hidden rounded-2xl border border-border bg-white p-5 sm:p-6">
         <div className="flex min-w-0 flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex min-w-0 items-center gap-4">
-            <div
-              className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-dusty-rose text-lg font-bold text-terracotta"
-              aria-hidden="true"
-            >
-              ET
+            <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full">
+              <Image
+                src="/profile.png"
+                alt={dict.profile.name}
+                fill
+                sizes="56px"
+                className="object-cover object-top"
+                priority
+              />
             </div>
             <div className="min-w-0">
               <h2 className="text-lg font-bold text-charcoal">
                 {dict.profile.name}
               </h2>
-              <p className="text-sm font-medium text-terracotta">
+              <p className="text-xs font-medium leading-snug text-terracotta sm:text-sm">
                 {dict.profile.title}
               </p>
             </div>
