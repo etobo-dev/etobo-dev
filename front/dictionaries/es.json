@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Elver Tobo — Desarrollador Backend",
+    "description": "Sistemas backend, productos en la nube, APIs y herramientas con IA. Portafolio de Elver Tobo."
+  },
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "articles": "Artículos",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "cta": "Trabajemos juntos →",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú"
+  },
+  "hero": {
+    "label": "BACKEND • CLOUD • IA",
+    "headlineBefore": "Construyo sistemas backend, productos en la nube, APIs y herramientas ",
+    "headlineHighlight": "impulsadas por IA",
+    "headlineAfter": ".",
+    "subtext": "Me enfoco en sistemas confiables y escalables con una experiencia de desarrollo clara — desde la arquitectura hasta el despliegue.",
+    "viewProjects": "Ver proyectos",
+    "readArticles": "Leer artículos"
+  },
+  "profile": {
+    "name": "Elver Tobo",
+    "title": "Desarrollador Backend",
+    "email": "hello@elvertobo.dev",
+    "github": "github.com/elvertobo",
+    "medium": "elvertobo.medium.com",
+    "linkedin": "linkedin.com/in/elvertobo"
+  },
+  "sections": {
+    "featuredProjects": "PROYECTOS DESTACADOS",
+    "latestWriting": "ÚLTIMOS ARTÍCULOS",
+    "viewAllProjects": "Ver todos los proyectos →",
+    "viewAllArticles": "Ver todos los artículos →"
+  },
+  "projects": {
+    "viewProject": "Ver proyecto →"
+  },
+  "articles": {
+    "minRead": "min de lectura"
+  },
+  "footerCta": {
+    "title": "¿Tienes un proyecto en mente?",
+    "subtitle": "Estoy abierto a oportunidades interesantes y colaboraciones.",
+    "button": "Trabajemos juntos →"
+  },
+  "pages": {
+    "projects": {
+      "title": "Proyectos",
+      "description": "Trabajo seleccionado en backend, cloud e IA."
+    },
+    "articles": {
+      "title": "Artículos",
+      "description": "Escritos sobre APIs, arquitectura y experiencia de desarrollo."
+    },
+    "about": {
+      "title": "Sobre mí",
+      "description": "Un poco sobre mí y cómo trabajo.",
+      "body": "Soy desarrollador backend y me gusta construir sistemas confiables — APIs, infraestructura en la nube y productos con IA en los que los equipos pueden confiar. Me importan la arquitectura clara, una buena DX y entregar trabajo que perdure."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Conectemos.",
+      "body": "Escríbeme a hello@elvertobo.dev para colaboraciones, consultoría u oportunidades interesantes. Siempre me gusta hablar de sistemas backend, arquitectura cloud y herramientas de IA."
+    }
+  }
+}
