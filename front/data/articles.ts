@@ -26,7 +26,7 @@ export const articles: Article[] = [
       es: "12 may 2024",
     },
     readingTime: 6,
-    href: "https://elvertobo.medium.com",
+    href: "https://medium.com/aws-articles",
     gradient: "from-terracotta/40 via-dusty-rose to-beige",
   },
   {
@@ -44,7 +44,7 @@ export const articles: Article[] = [
       es: "3 abr 2024",
     },
     readingTime: 8,
-    href: "https://elvertobo.medium.com",
+    href: "https://medium.com/aws-articles",
     gradient: "from-charcoal/30 via-tan to-dusty-rose",
   },
 ];

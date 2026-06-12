@@ -25,10 +25,10 @@
   "profile": {
     "name": "Elver Tobo",
     "title": "Desarrollador Backend",
-    "email": "hello@elvertobo.dev",
-    "github": "github.com/elvertobo",
-    "medium": "elvertobo.medium.com",
-    "linkedin": "linkedin.com/in/elvertobo"
+    "email": "contact@etobo.tech",
+    "github": "github.com/etobo-dev",
+    "medium": "medium.com/aws-articles",
+    "linkedin": "linkedin.com/in/elver-tobo"
   },
   "sections": {
     "featuredProjects": "PROYECTOS DESTACADOS",
@@ -64,7 +64,7 @@
     "contact": {
       "title": "Contacto",
       "description": "Conectemos.",
-      "body": "Escríbeme a hello@elvertobo.dev para colaboraciones, consultoría u oportunidades interesantes. Siempre me gusta hablar de sistemas backend, arquitectura cloud y herramientas de IA."
+      "body": "Escríbeme a contact@etobo.tech para colaboraciones, consultoría u oportunidades interesantes. Siempre me gusta hablar de sistemas backend, arquitectura cloud y herramientas de IA."
     }
   }
 }

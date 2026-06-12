@@ -25,7 +25,7 @@ export const projects: Project[] = [
       es: "Base de conocimiento multi-tenant con generación aumentada por recuperación, ingesta de documentos y APIs de búsqueda semántica.",
     },
     techStack: ["Python", "FastAPI", "PostgreSQL", "OpenAI"],
-    href: "https://github.com/elvertobo",
+    href: "https://github.com/etobo-dev",
     featured: true,
   },
   {
@@ -40,7 +40,7 @@ export const projects: Project[] = [
       es: "Procesamiento de imágenes orientado a eventos con redimensionado, optimización y entrega CDN a escala.",
     },
     techStack: ["AWS Lambda", "S3", "Sharp", "SQS"],
-    href: "https://github.com/elvertobo",
+    href: "https://github.com/etobo-dev",
     featured: true,
   },
 ];
