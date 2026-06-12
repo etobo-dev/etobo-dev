@@ -10,25 +10,25 @@ type InfoBarProps = {
 const links = [
   {
     key: "email" as const,
-    href: "mailto:hello@elvertobo.dev",
+    href: "mailto:contact@etobo.tech",
     labelKey: "email" as const,
     brand: null,
   },
   {
     key: "github" as const,
-    href: "https://github.com/elvertobo",
+    href: "https://github.com/etobo-dev",
     labelKey: "github" as const,
     brand: "github" as const,
   },
   {
     key: "medium" as const,
-    href: "https://elvertobo.medium.com",
+    href: "https://medium.com/aws-articles",
     labelKey: "medium" as const,
     brand: "medium" as const,
   },
   {
     key: "linkedin" as const,
-    href: "https://linkedin.com/in/elvertobo",
+    href: "https://www.linkedin.com/in/elver-tobo/",
     labelKey: "linkedin" as const,
     brand: "linkedin" as const,
   },
