@@ -119,12 +119,51 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
     );
   }
 
-  if (pageKey === "about" || pageKey === "contact") {
-    const body = dict.pages[pageKey].body;
+  if (pageKey === "about") {
+    const body = dict.pages.about.body;
+    const paragraphs = body.split("\n\n");
     return (
       <>
         <PageShell title={meta.title} description={meta.description}>
-          <p>{body}</p>
+          <div className="space-y-4">
+            {paragraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </PageShell>
+        <FooterCTA locale={locale} dict={dict} />
+      </>
+    );
+  }
+
+  if (pageKey === "contact") {
+    const contact = dict.pages.contact;
+    return (
+      <>
+        <PageShell title={meta.title} description={meta.description}>
+          <div className="space-y-6">
+            <p>{contact.body}</p>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a
+                  href={`mailto:${contact.email}`}
+                  className="font-medium text-terracotta transition-colors hover:text-terracotta-dark"
+                >
+                  {contact.email}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={contact.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-terracotta transition-colors hover:text-terracotta-dark"
+                >
+                  {contact.linkedinLabel}
+                </a>
+              </li>
+            </ul>
+          </div>
         </PageShell>
         <FooterCTA locale={locale} dict={dict} />
       </>
