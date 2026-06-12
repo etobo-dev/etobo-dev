@@ -1,5 +1,5 @@
 import type { Locale } from "@/lib/i18n";
-import { Database, ImageIcon } from "lucide-react";
+import { Database, LineChart } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 export type Project = {
@@ -14,33 +14,54 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "rag-kb-saas",
+    id: "knowforge",
     icon: Database,
     title: {
-      en: "RAG KB SaaS",
-      es: "RAG KB SaaS",
+      en: "Knowforge",
+      es: "Knowforge",
     },
     description: {
-      en: "Multi-tenant knowledge base with retrieval-augmented generation, document ingestion, and semantic search APIs.",
-      es: "Base de conocimiento multi-tenant con generación aumentada por recuperación, ingesta de documentos y APIs de búsqueda semántica.",
+      en: "Multi-tenant SaaS that turns company documents into RAG-powered knowledge bases — upload files, semantic search, and chat with your docs in secure workspaces.",
+      es: "SaaS multi-tenant que convierte documentos empresariales en bases de conocimiento con RAG: carga archivos, búsqueda semántica y chat con tu documentación en espacios seguros.",
     },
-    techStack: ["Python", "FastAPI", "PostgreSQL", "OpenAI"],
-    href: "https://github.com/etobo-dev",
+    techStack: [
+      "Python",
+      "TypeScript",
+      "RAG",
+      "AWS",
+      "Terraform",
+      "LlamaIndex",
+      "OpenAI",
+      "Supabase",
+      "Next.js",
+      "Vercel",
+    ],
+    href: "https://github.com/etobo-tech/knowforge",
     featured: true,
   },
   {
-    id: "serverless-image-pipeline",
-    icon: ImageIcon,
+    id: "noticrypt",
+    icon: LineChart,
     title: {
-      en: "Serverless Image Pipeline",
-      es: "Pipeline de imágenes serverless",
+      en: "NotiCrypt",
+      es: "NotiCrypt",
     },
     description: {
-      en: "Event-driven image processing with resizing, optimization, and CDN delivery at scale.",
-      es: "Procesamiento de imágenes orientado a eventos con redimensionado, optimización y entrega CDN a escala.",
+      en: "Monitors the cryptocurrency market and detects events that could move asset prices — built for timely alerts and market awareness.",
+      es: "Monitorea el mercado de criptomonedas y detecta eventualidades que pueden afectar el precio de los activos, con alertas oportunas.",
     },
-    techStack: ["AWS Lambda", "S3", "Sharp", "SQS"],
-    href: "https://github.com/etobo-dev",
+    techStack: [
+      "Python",
+      "AWS",
+      "TypeScript",
+      "Telegram API",
+      "OpenAI",
+      "Tavily",
+      "Apify",
+      "Next.js",
+      "Vercel",
+    ],
+    href: "https://noticrypt.tech",
     featured: true,
   },
 ];
