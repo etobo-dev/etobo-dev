@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { defaultLocale, isValidLocale, locales } from "@/lib/i18n";
+import { defaultLocale, isValidLocale } from "@/lib/i18n";
 
 const LOCALE_COOKIE = "NEXT_LOCALE";
 
@@ -13,7 +13,7 @@ function getPreferredLocale(request: NextRequest): string {
   return defaultLocale;
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   if (
