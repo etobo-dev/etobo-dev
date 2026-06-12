@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Elver Tobo — Desarrollador Backend",
-    "description": "Sistemas backend, productos en la nube, APIs y herramientas con IA. Portafolio de Elver Tobo."
+    "description": "Productos completos con IA, RAG, agentes y cloud AWS. Portafolio de Elver Tobo."
   },
   "nav": {
     "home": "Inicio",
@@ -14,11 +14,11 @@
     "menuClose": "Cerrar menú"
   },
   "hero": {
-    "label": "BACKEND • CLOUD • IA",
-    "headlineBefore": "Construyo sistemas backend, productos en la nube, APIs y herramientas ",
-    "headlineHighlight": "impulsadas por IA",
-    "headlineAfter": ".",
-    "subtext": "Me enfoco en sistemas confiables y escalables con una experiencia de desarrollo clara — desde la arquitectura hasta el despliegue.",
+    "label": "AWS • IA • RAG • AGENTES",
+    "headlineBefore": "Construyo productos completos con ",
+    "headlineHighlight": "IA, RAG y agentes",
+    "headlineAfter": " utilizando servicios cloud de AWS.",
+    "subtext": "Entrega de punta a punta — backend, infraestructura cloud y sistemas inteligentes listos para producción y escala.",
     "viewProjects": "Ver proyectos",
     "readArticles": "Leer artículos"
   },
