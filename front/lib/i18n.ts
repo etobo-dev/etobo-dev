@@ -79,6 +79,9 @@ export type Dictionary = {
       title: string;
       description: string;
       body: string;
+      email: string;
+      linkedinUrl: string;
+      linkedinLabel: string;
     };
   };
 };
