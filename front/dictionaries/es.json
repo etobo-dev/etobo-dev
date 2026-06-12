@@ -54,17 +54,20 @@
     },
     "articles": {
       "title": "Artículos",
-      "description": "Escritos sobre APIs, arquitectura y experiencia de desarrollo."
+      "description": "Artículos sobre AWS, arquitectura cloud, Python y preparación para certificaciones."
     },
     "about": {
       "title": "Sobre mí",
-      "description": "Un poco sobre mí y cómo trabajo.",
-      "body": "Soy desarrollador backend y me gusta construir sistemas confiables — APIs, infraestructura en la nube y productos con IA en los que los equipos pueden confiar. Me importan la arquitectura clara, una buena DX y entregar trabajo que perdure."
+      "description": "Ingeniero de software con experiencia en seguridad, construyendo productos con IA sobre AWS.",
+      "body": "Soy ingeniero de software con experiencia como Security Developer en Fluid Attacks, donde trabajé en seguridad de aplicaciones y buenas prácticas de desarrollo seguro.\n\nActualmente desarrollo NotiCrypt, un sistema que monitorea el mercado de criptomonedas y detecta eventualidades que pueden afectar el precio de los activos, y Knowforge, una base de conocimientos basada en RAG pensada para startups: conecta fuentes de datos, carga archivos y permite obtener información clave a través de un panel de chat.\n\nConstruyo software con AWS, Terraform, LlamaIndex, LangChain, Python, TypeScript y otras tecnologías. Utilizo herramientas como Cursor y Claude Code para acelerar el desarrollo sin sacrificar la calidad del código."
     },
     "contact": {
       "title": "Contacto",
       "description": "Conectemos.",
-      "body": "Escríbeme a contact@etobo.tech para colaboraciones, consultoría u oportunidades interesantes. Siempre me gusta hablar de sistemas backend, arquitectura cloud y herramientas de IA."
+      "body": "La mejor forma de contactarme es por correo o LinkedIn. Estoy abierto a colaboraciones, consultoría y oportunidades interesantes, y siempre me gusta hablar de sistemas backend, arquitectura cloud y herramientas de IA.",
+      "email": "contact@etobo.tech",
+      "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",
+      "linkedinLabel": "LinkedIn"
     }
   }
 }

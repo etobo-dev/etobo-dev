@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Button from "@/components/Button";
 import Container from "@/components/Container";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { linkedInMessageUrl } from "@/lib/links";
 import {
   getLocalizedPath,
   type Dictionary,
@@ -89,7 +90,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
 
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher locale={locale} />
-          <Button href={getLocalizedPath(locale, "contact")} variant="primary">
+          <Button href={linkedInMessageUrl} variant="primary" external>
             {dict.nav.cta}
           </Button>
         </div>
@@ -137,9 +138,10 @@ export default function Navbar({ locale, dict }: NavbarProps) {
             })}
             <li className="pt-2">
               <Button
-                href={getLocalizedPath(locale, "contact")}
+                href={linkedInMessageUrl}
                 variant="primary"
                 className="w-full"
+                external
               >
                 {dict.nav.cta}
               </Button>

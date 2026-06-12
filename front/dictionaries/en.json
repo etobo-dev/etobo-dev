@@ -54,17 +54,20 @@
     },
     "articles": {
       "title": "Articles",
-      "description": "Writing on APIs, architecture, and developer experience."
+      "description": "Writing on AWS, cloud architecture, Python, and certification prep."
     },
     "about": {
       "title": "About",
-      "description": "A bit about me and how I work.",
-      "body": "I'm a backend developer who enjoys building reliable systems — APIs, cloud infrastructure, and AI-powered products that teams can depend on. I care about clear architecture, thoughtful DX, and shipping work that lasts."
+      "description": "Software engineer with a security background, building AI-powered products on AWS.",
+      "body": "I'm a software engineer with experience as a Security Developer at Fluid Attacks, where I focused on application security and secure development practices.\n\nRight now I'm building NotiCrypt, a system that monitors the cryptocurrency market and flags events that could move asset prices, and Knowforge, a RAG-powered knowledge base for startups — connect data sources, upload documents, and pull out what matters through a chat panel.\n\nI ship software with AWS, Terraform, LlamaIndex, LangChain, Python, TypeScript, and more. I also use tools like Cursor and Claude Code to move faster while keeping a strong focus on code quality."
     },
     "contact": {
       "title": "Contact",
       "description": "Let's connect.",
-      "body": "Reach out at contact@etobo.tech for collaborations, consulting, or interesting opportunities. I'm always happy to talk about backend systems, cloud architecture, and AI tooling."
+      "body": "The best way to reach me is by email or LinkedIn. I'm open to collaborations, consulting, and interesting opportunities, and I'm always happy to talk about backend systems, cloud architecture, and AI tooling.",
+      "email": "contact@etobo.tech",
+      "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",
+      "linkedinLabel": "LinkedIn"
     }
   }
 }

@@ -15,7 +15,7 @@ export default function ArticleItem({
 }: ArticleItemProps) {
   return (
     <a
-      href={article.href}
+      href={article.href[locale]}
       target="_blank"
       rel="noopener noreferrer"
       className="group flex min-w-0 gap-4 rounded-2xl border border-border bg-white p-4 transition-shadow hover:shadow-soft"

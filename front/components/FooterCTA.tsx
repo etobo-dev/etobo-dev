@@ -1,8 +1,8 @@
 import { Send } from "lucide-react";
 import Button from "@/components/Button";
 import Container from "@/components/Container";
+import { linkedInMessageUrl } from "@/lib/links";
 import type { Dictionary, Locale } from "@/lib/i18n";
-import { getLocalizedPath } from "@/lib/i18n";
 
 type FooterCTAProps = {
   locale: Locale;
@@ -26,9 +26,10 @@ export default function FooterCTA({ locale, dict }: FooterCTAProps) {
         </div>
 
         <Button
-          href={getLocalizedPath(locale, "contact")}
+          href={linkedInMessageUrl}
           variant="outline-white"
           className="w-full shrink-0 sm:w-auto"
+          external
         >
           {dict.footerCta.button}
         </Button>
