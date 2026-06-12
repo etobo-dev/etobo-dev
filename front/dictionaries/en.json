@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Elver Tobo — Backend Developer",
+    "description": "Backend systems, cloud products, APIs, and AI-powered tools. Portfolio of Elver Tobo."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "articles": "Articles",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Let's work together →",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "hero": {
+    "label": "BACKEND • CLOUD • AI",
+    "headlineBefore": "I build backend systems, cloud products, APIs, and ",
+    "headlineHighlight": "AI-powered",
+    "headlineAfter": " tools.",
+    "subtext": "I focus on reliable, scalable systems and clean developer experience — from architecture to deployment.",
+    "viewProjects": "View Projects",
+    "readArticles": "Read Articles"
+  },
+  "profile": {
+    "name": "Elver Tobo",
+    "title": "Backend Developer",
+    "email": "hello@elvertobo.dev",
+    "github": "github.com/elvertobo",
+    "medium": "elvertobo.medium.com",
+    "linkedin": "linkedin.com/in/elvertobo"
+  },
+  "sections": {
+    "featuredProjects": "FEATURED PROJECTS",
+    "latestWriting": "LATEST WRITING",
+    "viewAllProjects": "View all projects →",
+    "viewAllArticles": "View all articles →"
+  },
+  "projects": {
+    "viewProject": "View project →"
+  },
+  "articles": {
+    "minRead": "min read"
+  },
+  "footerCta": {
+    "title": "Have a project in mind?",
+    "subtitle": "I'm open to interesting opportunities and collaborations.",
+    "button": "Let's work together →"
+  },
+  "pages": {
+    "projects": {
+      "title": "Projects",
+      "description": "Selected backend, cloud, and AI work."
+    },
+    "articles": {
+      "title": "Articles",
+      "description": "Writing on APIs, architecture, and developer experience."
+    },
+    "about": {
+      "title": "About",
+      "description": "A bit about me and how I work.",
+      "body": "I'm a backend developer who enjoys building reliable systems — APIs, cloud infrastructure, and AI-powered products that teams can depend on. I care about clear architecture, thoughtful DX, and shipping work that lasts."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Let's connect.",
+      "body": "Reach out at hello@elvertobo.dev for collaborations, consulting, or interesting opportunities. I'm always happy to talk about backend systems, cloud architecture, and AI tooling."
+    }
+  }
+}
