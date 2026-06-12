@@ -19,6 +19,11 @@ export function proxy(request: NextRequest) {
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
+    pathname === "/icon" ||
+    pathname.startsWith("/icon/") ||
+    pathname === "/apple-icon" ||
+    pathname.startsWith("/apple-icon/") ||
+    pathname === "/favicon.ico" ||
     pathname.includes(".")
   ) {
     return NextResponse.next();
@@ -38,5 +43,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|icon|apple-icon).*)"],
 };
