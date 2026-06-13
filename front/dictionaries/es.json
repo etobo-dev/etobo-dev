@@ -7,6 +7,7 @@
     "home": "Inicio",
     "projects": "Proyectos",
     "articles": "Artículos",
+    "credentials": "Certificaciones",
     "about": "Sobre mí",
     "contact": "Contacto",
     "cta": "Trabajemos juntos →",
@@ -43,6 +44,11 @@
   "articles": {
     "minRead": "min de lectura"
   },
+  "credentials": {
+    "certification": "Certificación",
+    "course": "Curso",
+    "viewCredential": "Ver credencial →"
+  },
   "footerCta": {
     "title": "¿Tienes un proyecto en mente?",
     "subtitle": "Estoy abierto a oportunidades interesantes y colaboraciones.",
@@ -56,6 +62,10 @@
     "articles": {
       "title": "Artículos",
       "description": "Artículos publicados en AWS Articles (Medium), en inglés."
+    },
+    "credentials": {
+      "title": "Certificaciones",
+      "description": "Certificaciones AWS, formación en seguridad y cursos cloud seleccionados."
     },
     "about": {
       "title": "Sobre mí",

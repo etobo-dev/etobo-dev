@@ -2,7 +2,14 @@ import { locales, localizedPaths, type Locale, type PageKey } from "@/lib/i18n";
 import { siteUrl } from "@/lib/site";
 import type { MetadataRoute } from "next";
 
-const pages: PageKey[] = ["home", "projects", "articles", "about", "contact"];
+const pages: PageKey[] = [
+  "home",
+  "projects",
+  "articles",
+  "credentials",
+  "about",
+  "contact",
+];
 
 function getPath(locale: Locale, page: PageKey): string {
   const segment = localizedPaths[page][locale];
