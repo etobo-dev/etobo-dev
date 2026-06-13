@@ -7,6 +7,7 @@
     "home": "Home",
     "projects": "Projects",
     "articles": "Articles",
+    "credentials": "Credentials",
     "about": "About",
     "contact": "Contact",
     "cta": "Let's work together →",
@@ -43,6 +44,11 @@
   "articles": {
     "minRead": "min read"
   },
+  "credentials": {
+    "certification": "Certification",
+    "course": "Course",
+    "viewCredential": "View credential →"
+  },
   "footerCta": {
     "title": "Have a project in mind?",
     "subtitle": "I'm open to interesting opportunities and collaborations.",
@@ -56,6 +62,10 @@
     "articles": {
       "title": "Articles",
       "description": "Articles published on AWS Articles (Medium), in English."
+    },
+    "credentials": {
+      "title": "Credentials",
+      "description": "AWS certifications, security training, and selected cloud courses."
     },
     "about": {
       "title": "About",

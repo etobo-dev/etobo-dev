@@ -20,6 +20,38 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "miro.medium.com",
       },
+      {
+        protocol: "https",
+        hostname: "images.credly.com",
+      },
+      {
+        protocol: "https",
+        hostname: "static.platzi.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.efset.org",
+      },
+      {
+        protocol: "https",
+        hostname: "import.cdn.thinkific.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.coursestack.com",
+      },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+      },
+      {
+        protocol: "https",
+        hostname: "a.storyblok.com",
+      },
+      {
+        protocol: "https",
+        hostname: "icon.icepanel.io",
+      },
     ],
   },
 };

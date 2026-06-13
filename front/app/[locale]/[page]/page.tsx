@@ -1,13 +1,16 @@
 import ArticleItem from "@/components/ArticleItem";
+import CredentialCard from "@/components/CredentialCard";
 import FooterCTA from "@/components/FooterCTA";
 import PageShell from "@/components/PageShell";
 import ProjectCard from "@/components/ProjectCard";
 import { articles } from "@/data/articles";
+import { credentials } from "@/data/credentials";
 import { projects } from "@/data/projects";
 import {
   getDictionary,
   getPageKeyFromSlug,
   isValidLocale,
+  localizedPaths,
   type Locale,
   type PageKey,
 } from "@/lib/i18n";
@@ -27,17 +30,14 @@ export async function generateStaticParams() {
   const params: { locale: Locale; page: string }[] = [];
 
   for (const locale of ["en", "es"] as const) {
-    for (const page of ["projects", "articles", "about", "contact"] as const) {
-      const slug =
-        locale === "en"
-          ? { projects: "projects", articles: "articles", about: "about", contact: "contact" }[page]
-          : {
-              projects: "proyectos",
-              articles: "articulos",
-              about: "sobre-mi",
-              contact: "contacto",
-            }[page];
-      params.push({ locale, page: slug });
+    for (const page of [
+      "projects",
+      "articles",
+      "credentials",
+      "about",
+      "contact",
+    ] as const) {
+      params.push({ locale, page: localizedPaths[page][locale] });
     }
   }
 
@@ -109,6 +109,25 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
           <div className="mt-8 flex flex-col gap-4">
             {articles.map((article) => (
               <ArticleItem key={article.id} article={article} dict={dict} />
+            ))}
+          </div>
+        </PageShell>
+        <FooterCTA locale={locale} dict={dict} />
+      </>
+    );
+  }
+
+  if (pageKey === "credentials") {
+    return (
+      <>
+        <PageShell title={meta.title} description={meta.description}>
+          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:max-w-4xl">
+            {credentials.map((credential) => (
+              <CredentialCard
+                key={credential.id}
+                credential={credential}
+                dict={dict}
+              />
             ))}
           </div>
         </PageShell>
