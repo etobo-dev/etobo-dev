@@ -21,12 +21,7 @@ export default function LatestWriting({ locale, dict }: LatestWritingProps) {
       />
       <div className="flex flex-col gap-4">
         {articles.map((article) => (
-          <ArticleItem
-            key={article.id}
-            article={article}
-            locale={locale}
-            dict={dict}
-          />
+          <ArticleItem key={article.id} article={article} dict={dict} />
         ))}
       </div>
     </section>

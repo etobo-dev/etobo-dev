@@ -28,7 +28,8 @@
     "email": "contact@etobo.tech",
     "github": "github.com/etobo-dev",
     "medium": "medium.com/aws-articles",
-    "linkedin": "linkedin.com/in/elver-tobo"
+    "linkedin": "linkedin.com/in/elver-tobo",
+    "x": "x.com/_etobo_"
   },
   "sections": {
     "featuredProjects": "PROYECTOS DESTACADOS",
@@ -50,11 +51,11 @@
   "pages": {
     "projects": {
       "title": "Proyectos",
-      "description": "Knowforge, NotiCrypt y otros productos de IA y cloud."
+      "description": "Los productos principales que estoy desarrollando y llevando a producción — Knowforge y NotiCrypt."
     },
     "articles": {
       "title": "Artículos",
-      "description": "Artículos sobre AWS, arquitectura cloud, Python y preparación para certificaciones."
+      "description": "Artículos publicados en AWS Articles (Medium), en inglés."
     },
     "about": {
       "title": "Sobre mí",

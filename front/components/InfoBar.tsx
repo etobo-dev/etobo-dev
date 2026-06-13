@@ -33,6 +33,12 @@ const links = [
     labelKey: "linkedin" as const,
     brand: "linkedin" as const,
   },
+  {
+    key: "x" as const,
+    href: "https://x.com/_etobo_",
+    labelKey: "x" as const,
+    brand: "x" as const,
+  },
 ] as const;
 
 function ContactLink({
