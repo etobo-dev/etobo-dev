@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { siteName, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -9,9 +10,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Elver Tobo — Software Engineer | AI Agents | Python | 2× AWS Certified",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Elver Tobo — Software Engineer | AI Agents | Python | 2× AWS Certified",
+    template: `%s — ${siteName}`,
+  },
   description:
     "End-to-end products with AI, RAG, agents, and AWS cloud.",
+  applicationName: siteName,
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

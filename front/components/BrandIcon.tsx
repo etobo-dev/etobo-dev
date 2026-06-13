@@ -1,10 +1,11 @@
-import { siGithub, siMedium } from "simple-icons";
+import { siGithub, siMedium, siX } from "simple-icons";
 
-type Brand = "github" | "linkedin" | "medium";
+type Brand = "github" | "linkedin" | "medium" | "x";
 
 const simpleIcons = {
   github: siGithub,
   medium: siMedium,
+  x: siX,
 } as const;
 
 // LinkedIn was removed from simple-icons; use official-style path inline.

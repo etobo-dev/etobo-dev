@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import InfoBar from "@/components/InfoBar";
 import LatestWriting from "@/components/LatestWriting";
 import { getDictionary, isValidLocale, type Locale } from "@/lib/i18n";
+import { buildPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -19,10 +20,12 @@ export async function generateMetadata({
   if (!isValidLocale(localeParam)) return {};
 
   const dict = await getDictionary(localeParam);
-  return {
+  return buildPageMetadata({
+    locale: localeParam,
     title: dict.meta.title,
     description: dict.meta.description,
-  };
+    page: "home",
+  });
 }
 
 export default async function HomePage({ params }: HomePageProps) {
