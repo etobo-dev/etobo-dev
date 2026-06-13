@@ -10,6 +10,18 @@ const nextConfig: NextConfig = {
     "*.ngrok.io",
     "*.ngrok.dev",
   ],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn-images-1.medium.com",
+      },
+      {
+        protocol: "https",
+        hostname: "miro.medium.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

@@ -11,6 +11,7 @@ import {
   type Locale,
   type PageKey,
 } from "@/lib/i18n";
+import { buildPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -56,10 +57,12 @@ export async function generateMetadata({
   const dict = await getDictionary(locale);
   const meta = getPageMeta(dict, pageKey);
 
-  return {
-    title: `${meta.title} — Elver Tobo`,
+  return buildPageMetadata({
+    locale,
+    title: meta.title,
     description: meta.description,
-  };
+    page: pageKey,
+  });
 }
 
 export default async function DynamicPage({ params }: DynamicPageProps) {
@@ -105,12 +108,7 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
         <PageShell title={meta.title} description={meta.description}>
           <div className="mt-8 flex flex-col gap-4">
             {articles.map((article) => (
-              <ArticleItem
-                key={article.id}
-                article={article}
-                locale={locale}
-                dict={dict}
-              />
+              <ArticleItem key={article.id} article={article} dict={dict} />
             ))}
           </div>
         </PageShell>

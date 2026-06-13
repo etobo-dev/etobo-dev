@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import LocaleLang from "@/components/LocaleLang";
 import Navbar from "@/components/Navbar";
+import SeoJsonLd from "@/components/SeoJsonLd";
 import { getDictionary, isValidLocale, type Locale } from "@/lib/i18n";
 
 type LocaleLayoutProps = {
@@ -27,6 +28,7 @@ export default async function LocaleLayout({
 
   return (
     <>
+      <SeoJsonLd locale={locale} />
       <LocaleLang locale={locale} />
       <Navbar locale={locale} dict={dict} />
       <main>{children}</main>

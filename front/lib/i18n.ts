@@ -43,6 +43,7 @@ export type Dictionary = {
     github: string;
     medium: string;
     linkedin: string;
+    x: string;
   };
   sections: {
     featuredProjects: string;
