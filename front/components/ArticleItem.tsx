@@ -16,13 +16,17 @@ export default function ArticleItem({ article, dict }: ArticleItemProps) {
       rel="noopener noreferrer"
       className="group flex min-w-0 gap-4 rounded-2xl border border-border bg-white p-4 transition-shadow hover:shadow-soft"
     >
-      <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-beige">
+      <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-dusty-rose">
         <Image
           src={article.imageUrl}
           alt=""
           fill
           sizes="64px"
-          className="object-cover"
+          className="media-harmonize-image object-cover"
+        />
+        <div
+          className="media-harmonize-overlay pointer-events-none absolute inset-0"
+          aria-hidden="true"
         />
       </div>
 
