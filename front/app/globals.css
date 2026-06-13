@@ -23,3 +23,29 @@ body {
   color: var(--color-body);
   font-family: var(--font-inter), system-ui, sans-serif;
 }
+
+@layer utilities {
+  .media-harmonize-image {
+    filter: sepia(0.85) saturate(0.45) hue-rotate(350deg) brightness(0.92) contrast(1.08);
+    transition: filter 200ms ease;
+  }
+
+  .group:hover .media-harmonize-image {
+    filter: sepia(0.7) saturate(0.55) hue-rotate(350deg) brightness(0.96) contrast(1.06);
+  }
+
+  .media-harmonize-overlay {
+    background: linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--color-terracotta) 55%, transparent),
+      color-mix(in srgb, var(--color-dusty-rose) 65%, transparent)
+    );
+    mix-blend-mode: multiply;
+    opacity: 0.92;
+    transition: opacity 200ms ease;
+  }
+
+  .group:hover .media-harmonize-overlay {
+    opacity: 0.75;
+  }
+}

@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="./public/profile.png" alt="Elver Tobo" width="120" style="border-radius: 50%;" />
+</p>
 
-## Getting Started
+<h1 align="center">Elver Tobo</h1>
 
-First, run the development server:
+<p align="center">
+  <strong>Software Engineer · AI · RAG · AWS</strong><br />
+  Building complete products with intelligent systems and cloud infrastructure.
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+  <a href="https://etobo.tech"><img src="https://img.shields.io/badge/🌐_Live-etobo.tech-B14B1E?style=for-the-badge" alt="Live site" /></a>
+  <a href="https://github.com/etobo-tech/knowforge"><img src="https://img.shields.io/badge/Knowforge-RAG_SaaS-2D1B14?style=for-the-badge" alt="Knowforge" /></a>
+  <a href="https://noticrypt.tech"><img src="https://img.shields.io/badge/NotiCrypt-Crypto_alerts-B14B1E?style=for-the-badge" alt="NotiCrypt" /></a>
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-16-000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/Vercel-Deploy-000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## About this repo
 
-## Learn More
+Personal portfolio site — bilingual (**English / Spanish**), fast, and built to showcase real work: AI products, AWS writing, and cloud engineering.
 
-To learn more about Next.js, take a look at the following resources:
+**Featured projects**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| | |
+|---|---|
+| **[Knowforge](https://github.com/etobo-tech/knowforge)** | Multi-tenant RAG knowledge base for startups — upload docs, semantic search, chat with your data. |
+| **[NotiCrypt](https://noticrypt.tech)** | Cryptocurrency market monitor that detects events that can move asset prices. |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Writing**
 
-## Deploy on Vercel
+Technical articles on AWS, Python, and certification prep — published on [AWS Articles (Medium)](https://medium.com/aws-articles).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Connect
+
+<p>
+  <a href="mailto:contact@etobo.tech">Email</a> ·
+  <a href="https://www.linkedin.com/in/elver-tobo/">LinkedIn</a> ·
+  <a href="https://github.com/etobo-dev">GitHub</a> ·
+  <a href="https://medium.com/aws-articles">Medium</a> ·
+  <a href="https://x.com/_etobo_">X</a>
+</p>
+
+<p align="center">
+  <sub>2× AWS Certified · Security background · Fluid Attacks alum</sub>
+</p>
+
+<p align="center">
+  <a href="https://etobo.tech">etobo.tech</a>
+</p>
