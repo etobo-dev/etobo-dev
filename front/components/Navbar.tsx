@@ -24,6 +24,7 @@ const navItems: PageKey[] = [
   "home",
   "projects",
   "articles",
+  "credentials",
   "about",
   "contact",
 ];
@@ -55,6 +56,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
     home: dict.nav.home,
     projects: dict.nav.projects,
     articles: dict.nav.articles,
+    credentials: dict.nav.credentials,
     about: dict.nav.about,
     contact: dict.nav.contact,
   };

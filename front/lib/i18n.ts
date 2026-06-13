@@ -6,6 +6,7 @@ export const localizedPaths = {
   home: { en: "", es: "" },
   projects: { en: "projects", es: "proyectos" },
   articles: { en: "articles", es: "articulos" },
+  credentials: { en: "credentials", es: "certificaciones" },
   about: { en: "about", es: "sobre-mi" },
   contact: { en: "contact", es: "contacto" },
 } as const;
@@ -21,6 +22,7 @@ export type Dictionary = {
     home: string;
     projects: string;
     articles: string;
+    credentials: string;
     about: string;
     contact: string;
     cta: string;
@@ -57,6 +59,11 @@ export type Dictionary = {
   articles: {
     minRead: string;
   };
+  credentials: {
+    certification: string;
+    course: string;
+    viewCredential: string;
+  };
   footerCta: {
     title: string;
     subtitle: string;
@@ -68,6 +75,10 @@ export type Dictionary = {
       description: string;
     };
     articles: {
+      title: string;
+      description: string;
+    };
+    credentials: {
       title: string;
       description: string;
     };
