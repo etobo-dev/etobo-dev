@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
-import { siteName, siteUrl } from "@/lib/site";
+import { pirschCode, siteName, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -31,6 +32,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <head>
+        <Script
+          id="pianjs"
+          src="https://api.pirsch.io/pa.js"
+          data-code={pirschCode}
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-full overflow-x-hidden bg-cream font-sans text-body">
         {children}
       </body>

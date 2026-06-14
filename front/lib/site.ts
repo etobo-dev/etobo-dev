@@ -3,6 +3,8 @@ export const siteUrl =
 
 export const siteName = "Elver Tobo";
 
+export const pirschCode = "CYUrmtH7kcB30a93crH3x6VuswShdckE";
+
 export const socialLinks = {
   email: "contact@etobo.tech",
   github: "https://github.com/etobo-dev",
