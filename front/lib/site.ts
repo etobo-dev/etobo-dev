@@ -9,7 +9,7 @@ export const socialLinks = {
   email: "contact@etobo.tech",
   github: "https://github.com/etobo-dev",
   linkedin: "https://www.linkedin.com/in/elver-tobo/",
-  medium: "https://medium.com/aws-articles",
+  medium: "https://articles.etobo.tech",
   x: "https://x.com/_etobo_",
 } as const;
 

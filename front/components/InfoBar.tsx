@@ -23,7 +23,7 @@ const links = [
   },
   {
     key: "medium" as const,
-    href: "https://medium.com/aws-articles",
+    href: "https://articles.etobo.tech",
     labelKey: "medium" as const,
     brand: "medium" as const,
   },

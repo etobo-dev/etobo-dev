@@ -37,7 +37,7 @@ Personal portfolio site — bilingual (**English / Spanish**), fast, and built t
 
 **Writing**
 
-Technical articles on AWS, Python, and certification prep — published on [AWS Articles (Medium)](https://medium.com/aws-articles).
+Technical articles on AWS, Python, and certification prep — published on [articles.etobo.tech](https://articles.etobo.tech).
 
 ---
 
@@ -47,7 +47,7 @@ Technical articles on AWS, Python, and certification prep — published on [AWS 
   <a href="mailto:contact@etobo.tech">Email</a> ·
   <a href="https://www.linkedin.com/in/elver-tobo/">LinkedIn</a> ·
   <a href="https://github.com/etobo-dev">GitHub</a> ·
-  <a href="https://medium.com/aws-articles">Medium</a> ·
+  <a href="https://articles.etobo.tech">Articles</a> ·
   <a href="https://x.com/_etobo_">X</a>
 </p>
 
