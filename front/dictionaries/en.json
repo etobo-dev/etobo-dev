@@ -28,7 +28,7 @@
     "title": "Software Engineer | AI Agents | Python | 2× AWS Certified",
     "email": "contact@etobo.tech",
     "github": "github.com/etobo-dev",
-    "medium": "medium.com/aws-articles",
+    "medium": "articles.etobo.tech",
     "linkedin": "linkedin.com/in/elver-tobo",
     "x": "x.com/_etobo_"
   },
@@ -61,7 +61,7 @@
     },
     "articles": {
       "title": "Articles",
-      "description": "Articles published on AWS Articles (Medium), in English."
+      "description": "Articles published on articles.etobo.tech, in English."
     },
     "credentials": {
       "title": "Credentials",

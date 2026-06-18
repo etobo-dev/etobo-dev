@@ -28,7 +28,7 @@
     "title": "Ingeniero de Software | Agentes IA | Python | 2× Certificado AWS",
     "email": "contact@etobo.tech",
     "github": "github.com/etobo-dev",
-    "medium": "medium.com/aws-articles",
+    "medium": "articles.etobo.tech",
     "linkedin": "linkedin.com/in/elver-tobo",
     "x": "x.com/_etobo_"
   },
@@ -61,7 +61,7 @@
     },
     "articles": {
       "title": "Artículos",
-      "description": "Artículos publicados en AWS Articles (Medium), en inglés."
+      "description": "Artículos publicados en articles.etobo.tech, en inglés."
     },
     "credentials": {
       "title": "Certificaciones",

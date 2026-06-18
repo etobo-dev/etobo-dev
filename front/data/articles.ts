@@ -17,7 +17,7 @@ export const articles: Article[] = [
       "Step-by-step guide to create a free AWS account and access 200+ cloud services for tutorials and projects.",
     date: "Nov 5, 2025",
     readingTime: 4,
-    href: "https://medium.com/aws-articles/getting-started-with-aws-a-complete-beginners-guide-to-creating-your-aws-account-a7ce0093dfc4",
+    href: "https://articles.etobo.tech/getting-started-with-aws-a-complete-beginners-guide-to-creating-your-aws-account-a7ce0093dfc4",
     imageUrl:
       "https://cdn-images-1.medium.com/max/1024/1*uK5NAdBC_uFH1_HCF3J2Ng.png",
   },
@@ -29,7 +29,7 @@ export const articles: Article[] = [
       "Create, list, and delete EC2 instances programmatically with Boto3 — from setup to practical automation scripts.",
     date: "Feb 9, 2025",
     readingTime: 7,
-    href: "https://medium.com/aws-articles/simple-guide-to-managing-aws-services-with-python-and-boto3-creating-listing-and-deleting-ec2-80b9849fd969",
+    href: "https://articles.etobo.tech/simple-guide-to-managing-aws-services-with-python-and-boto3-creating-listing-and-deleting-ec2-80b9849fd969",
     imageUrl:
       "https://cdn-images-1.medium.com/max/1024/1*DD3Hd27Mq75JFUs_gehSCQ.jpeg",
   },
@@ -41,7 +41,7 @@ export const articles: Article[] = [
       "A full CLF-C02 practice set to test your knowledge before sitting the AWS Certified Cloud Practitioner exam.",
     date: "Jan 26, 2025",
     readingTime: 15,
-    href: "https://medium.com/aws-articles/50-aws-certified-cloud-practitioner-exam-clf-c02-practice-questions-6f54db63531e",
+    href: "https://articles.etobo.tech/50-aws-certified-cloud-practitioner-exam-clf-c02-practice-questions-6f54db63531e",
     imageUrl:
       "https://cdn-images-1.medium.com/max/1024/1*fTx0F8jXqqg0FWHJRUeyZA.jpeg",
   },
@@ -52,7 +52,7 @@ export const articles: Article[] = [
       "Answer key for the 50 CLF-C02 practice questions — useful for self-checking while you study.",
     date: "Jan 26, 2025",
     readingTime: 2,
-    href: "https://medium.com/aws-articles/aws-certified-cloud-practitioner-quiz-answers-a4b20b504e54",
+    href: "https://articles.etobo.tech/aws-certified-cloud-practitioner-quiz-answers-a4b20b504e54",
     imageUrl:
       "https://cdn-images-1.medium.com/max/1024/1*MTsLqhZiLuUnd3eqK8dNOg.jpeg",
   },
@@ -63,7 +63,7 @@ export const articles: Article[] = [
       "Understand S3 fundamentals, storage classes, security, and advanced configurations for real-world workloads.",
     date: "Dec 24, 2024",
     readingTime: 11,
-    href: "https://medium.com/aws-articles/amazon-s3-explained-from-basics-to-advanced-configurations-14717d2e88b9",
+    href: "https://articles.etobo.tech/amazon-s3-explained-from-basics-to-advanced-configurations-14717d2e88b9",
     imageUrl:
       "https://cdn-images-1.medium.com/max/1024/1*zW1idh3fIi2DoNYi7J6PBw.jpeg",
   },
@@ -75,7 +75,7 @@ export const articles: Article[] = [
       "Launch and configure your first EC2 instance with a practical, step-by-step walkthrough.",
     date: "Nov 20, 2024",
     readingTime: 13,
-    href: "https://medium.com/aws-articles/introduction-to-ec2-explained-step-by-step-create-your-first-server-in-the-aws-cloud-12bddf1dcd3b",
+    href: "https://articles.etobo.tech/introduction-to-ec2-explained-step-by-step-create-your-first-server-in-the-aws-cloud-12bddf1dcd3b",
     imageUrl:
       "https://cdn-images-1.medium.com/max/1024/1*CB8Hg2yo7WvO5v2v0UxDTw.png",
   },
@@ -87,7 +87,7 @@ export const articles: Article[] = [
       "Study strategy, free resources, and readiness signals I used to pass the CLF certification.",
     date: "Nov 20, 2024",
     readingTime: 10,
-    href: "https://medium.com/aws-articles/how-to-pass-the-aws-certified-cloud-practitioner-certification-with-free-resources-342568406a31",
+    href: "https://articles.etobo.tech/how-to-pass-the-aws-certified-cloud-practitioner-certification-with-free-resources-342568406a31",
     imageUrl:
       "https://cdn-images-1.medium.com/max/1024/1*IdH_JOTE7yw1YKSaGgPy8w.jpeg",
   },
@@ -99,7 +99,7 @@ export const articles: Article[] = [
       "Host a static site on S3 with bucket configuration, permissions, and deployment best practices.",
     date: "Nov 20, 2024",
     readingTime: 7,
-    href: "https://medium.com/aws-articles/how-to-deploy-a-static-website-on-amazon-s3-step-by-step-english-version-4aa376d6f404",
+    href: "https://articles.etobo.tech/how-to-deploy-a-static-website-on-amazon-s3-step-by-step-english-version-4aa376d6f404",
     imageUrl:
       "https://cdn-images-1.medium.com/max/700/0*P38ZdAMMssnlo_qC.jpeg",
   },
