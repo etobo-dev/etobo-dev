@@ -3,6 +3,8 @@ import { Mail } from "lucide-react";
 import BrandIcon from "@/components/BrandIcon";
 import Container from "@/components/Container";
 import type { Dictionary } from "@/lib/i18n";
+import { socialLinks } from "@/lib/site";
+import { buildOutboundUrl } from "@/lib/utm";
 
 type InfoBarProps = {
   dict: Dictionary;
@@ -11,31 +13,31 @@ type InfoBarProps = {
 const links = [
   {
     key: "email" as const,
-    href: "mailto:contact@etobo.tech",
+    href: `mailto:${socialLinks.email}`,
     labelKey: "email" as const,
     brand: null,
   },
   {
     key: "github" as const,
-    href: "https://github.com/etobo-dev",
+    href: socialLinks.github,
     labelKey: "github" as const,
     brand: "github" as const,
   },
   {
     key: "medium" as const,
-    href: "https://articles.etobo.tech",
+    href: socialLinks.medium,
     labelKey: "medium" as const,
     brand: "medium" as const,
   },
   {
     key: "linkedin" as const,
-    href: "https://www.linkedin.com/in/elver-tobo/",
+    href: socialLinks.linkedin,
     labelKey: "linkedin" as const,
     brand: "linkedin" as const,
   },
   {
     key: "x" as const,
-    href: "https://x.com/_etobo_",
+    href: socialLinks.x,
     labelKey: "x" as const,
     brand: "x" as const,
   },
@@ -48,9 +50,12 @@ function ContactLink({
   link: (typeof links)[number];
   label: string;
 }) {
+  const href =
+    link.key === "email" ? link.href : buildOutboundUrl(link.href);
+
   return (
     <a
-      href={link.href}
+      href={href}
       target={link.key === "email" ? undefined : "_blank"}
       rel={link.key === "email" ? undefined : "noopener noreferrer"}
       title={label}

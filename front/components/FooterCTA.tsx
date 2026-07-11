@@ -3,6 +3,7 @@ import Button from "@/components/Button";
 import Container from "@/components/Container";
 import { linkedInMessageUrl } from "@/lib/links";
 import type { Dictionary, Locale } from "@/lib/i18n";
+import { buildOutboundUrl } from "@/lib/utm";
 
 type FooterCTAProps = {
   locale: Locale;
@@ -10,6 +11,8 @@ type FooterCTAProps = {
 };
 
 export default function FooterCTA({ locale, dict }: FooterCTAProps) {
+  const linkedInHref = buildOutboundUrl(linkedInMessageUrl);
+
   return (
     <Container as="section" className="py-10 sm:py-14">
       <div className="flex min-w-0 flex-col items-start justify-between gap-6 overflow-hidden rounded-3xl bg-terracotta px-6 py-8 text-white sm:flex-row sm:items-center sm:px-8 sm:py-10">
@@ -26,7 +29,7 @@ export default function FooterCTA({ locale, dict }: FooterCTAProps) {
         </div>
 
         <Button
-          href={linkedInMessageUrl}
+          href={linkedInHref}
           variant="outline-white"
           className="w-full shrink-0 sm:w-auto"
           external
