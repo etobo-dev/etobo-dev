@@ -14,6 +14,7 @@ import {
   type Locale,
   type PageKey,
 } from "@/lib/i18n";
+import { buildOutboundUrl } from "@/lib/utm";
 
 type NavbarProps = {
   locale: Locale;
@@ -40,6 +41,7 @@ function isActive(pathname: string, locale: Locale, page: PageKey): boolean {
 export default function Navbar({ locale, dict }: NavbarProps) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const linkedInHref = buildOutboundUrl(linkedInMessageUrl);
 
   useEffect(() => {
     setOpen(false);
@@ -92,7 +94,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
 
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher locale={locale} />
-          <Button href={linkedInMessageUrl} variant="primary" external>
+          <Button href={linkedInHref} variant="primary" external>
             {dict.nav.cta}
           </Button>
         </div>
@@ -140,7 +142,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
             })}
             <li className="pt-2">
               <Button
-                href={linkedInMessageUrl}
+                href={linkedInHref}
                 variant="primary"
                 className="w-full"
                 external

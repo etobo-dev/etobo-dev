@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import type { Article } from "@/data/articles";
 import type { Dictionary } from "@/lib/i18n";
+import { buildOutboundUrl } from "@/lib/utm";
 
 type ArticleItemProps = {
   article: Article;
@@ -9,9 +10,11 @@ type ArticleItemProps = {
 };
 
 export default function ArticleItem({ article, dict }: ArticleItemProps) {
+  const href = buildOutboundUrl(article.href);
+
   return (
     <a
-      href={article.href}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className="group flex min-w-0 gap-4 rounded-2xl border border-border bg-white p-4 transition-shadow hover:shadow-soft"

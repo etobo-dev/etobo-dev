@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import type { Project } from "@/data/projects";
 import type { Dictionary, Locale } from "@/lib/i18n";
+import { buildOutboundUrl } from "@/lib/utm";
 
 type ProjectCardProps = {
   project: Project;
@@ -16,10 +17,11 @@ export default function ProjectCard({
   compact = false,
 }: ProjectCardProps) {
   const Icon = project.icon;
+  const href = buildOutboundUrl(project.href);
 
   return (
     <a
-      href={project.href}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className="group flex min-w-0 items-start gap-4 rounded-2xl border border-border bg-white p-4 transition-shadow hover:shadow-soft sm:p-5"
