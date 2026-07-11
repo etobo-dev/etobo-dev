@@ -15,6 +15,8 @@ import {
   type PageKey,
 } from "@/lib/i18n";
 import { buildPageMetadata } from "@/lib/seo";
+import { socialLinks } from "@/lib/site";
+import { buildOutboundUrl } from "@/lib/utm";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
@@ -108,7 +110,11 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
         <PageShell title={meta.title} description={meta.description}>
           <div className="mt-8 flex flex-col gap-4">
             {articles.map((article) => (
-              <ArticleItem key={article.id} article={article} dict={dict} />
+              <ArticleItem
+                key={article.id}
+                article={article}
+                dict={dict}
+              />
             ))}
           </div>
         </PageShell>
@@ -171,7 +177,7 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
               </li>
               <li>
                 <a
-                  href={contact.linkedinUrl}
+                  href={buildOutboundUrl(socialLinks.linkedin)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-medium text-terracotta transition-colors hover:text-terracotta-dark"
