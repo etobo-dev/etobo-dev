@@ -10,6 +10,18 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    id: "world-cup-ai-2026",
+    title:
+      "How Artificial Intelligence Is Used at the 2026 World Cup: Sensors, Computer Vision, Data, and Tactical Analysis",
+    snippet:
+      "How sensors, computer vision, and AI support refereeing, 3D recreations, and tactical analysis at the 2026 FIFA World Cup — without replacing referees or coaches.",
+    date: "Jul 9, 2026",
+    readingTime: 11,
+    href: "https://articles.etobo.tech/how-artificial-intelligence-is-used-at-the-2026-world-cup-sensors-computer-vision-data-and-766d2f037d53",
+    imageUrl:
+      "https://miro.medium.com/v2/da:true/resize:fit:1200/0*Je0GldarhKn9Oeae",
+  },
+  {
     id: "aws-account-setup",
     title:
       "Getting Started with AWS: A Complete Beginner’s Guide to Creating Your AWS Account",
