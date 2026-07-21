@@ -51,8 +51,8 @@
     "viewCredential": "Ver credencial →"
   },
   "footerCta": {
-    "title": "¿Tienes un proyecto en mente?",
-    "subtitle": "Estoy abierto a oportunidades interesantes y colaboraciones.",
+    "title": "¿Tienes un proyecto o una posición abierta en mente?",
+    "subtitle": "Estoy abierto a oportunidades interesantes, colaboraciones y roles donde pueda aportar.",
     "button": "Trabajemos juntos →"
   },
   "pages": {
@@ -70,8 +70,8 @@
     },
     "about": {
       "title": "Sobre mí",
-      "description": "Ingeniero de software con experiencia en seguridad, construyendo productos con IA sobre AWS.",
-      "body": "Soy ingeniero de software con experiencia como Security Developer en Fluid Attacks, donde trabajé en seguridad de aplicaciones y buenas prácticas de desarrollo seguro.\n\nActualmente desarrollo NotiCrypt, un sistema que monitorea el mercado de criptomonedas y detecta eventualidades que pueden afectar el precio de los activos, y Knowforge, una base de conocimientos basada en RAG pensada para startups: conecta fuentes de datos, carga archivos y permite obtener información clave a través de un panel de chat.\n\nConstruyo software con AWS, Terraform, LlamaIndex, LangChain, Python, TypeScript y otras tecnologías. Utilizo herramientas como Cursor y Claude Code para acelerar el desarrollo sin sacrificar la calidad del código."
+      "description": "Ingeniero de software con más de cuatro años de experiencia construyendo sistemas backend, serverless y cloud-native con Python y AWS.",
+      "body": "Mi trayectoria incluye debugging en producción, desarrollo con enfoque en seguridad, infraestructura como código, automatización en la nube y diseño de servicios backend confiables. También uso Cursor para acelerar mi flujo de trabajo, mejorar la calidad del código, explorar soluciones y aumentar la velocidad de entrega, manteniendo criterio técnico y ownership del código.\n\nMi principal experiencia profesional ha sido en Fluid Attacks como Security Developer, donde desarrollé múltiples funcionalidades y pude trabajar en las áreas de analítica, ingeniería y gestión de incidentes.\n\nMe interesan especialmente los roles en los que pueda contribuir a sistemas escalables, mejorar la confiabilidad y construir software mantenible en entornos de producción.\n\nTambién estoy desarrollando expertise en sistemas de software asistidos por IA, incluyendo aplicaciones RAG y agentes de IA, con un enfoque práctico en usar IA para resolver problemas reales de negocio e ingeniería.\n\nComo hobby y parte de mi marca personal, me gusta escribir artículos en Medium. Si quieres leerlos, puedes encontrarlos en articles.etobo.tech.\n\nStack tecnológico: Cursor, Python, FastAPI, AWS Lambda, S3, EC2, RDS, DynamoDB, CloudWatch, ECS, Bedrock, API Gateway, EventBridge, SNS, SSM, Terraform, Docker, GitLab, Git, Bash, LangChain, LangGraph y LangSmith."
     },
     "contact": {
       "title": "Contacto",

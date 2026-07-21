@@ -51,8 +51,8 @@
     "viewCredential": "View credential →"
   },
   "footerCta": {
-    "title": "Have a project in mind?",
-    "subtitle": "I'm open to interesting opportunities and collaborations.",
+    "title": "Have a project or an open role in mind?",
+    "subtitle": "I'm open to interesting opportunities, collaborations, and positions where I can contribute.",
     "button": "Let's work together →"
   },
   "pages": {
@@ -70,8 +70,8 @@
     },
     "about": {
       "title": "About",
-      "description": "Software engineer with a security background, building AI-powered products on AWS.",
-      "body": "I'm a software engineer with experience as a Security Developer at Fluid Attacks, where I focused on application security and secure development practices.\n\nRight now I'm building NotiCrypt, a system that monitors the cryptocurrency market and flags events that could move asset prices, and Knowforge, a RAG-powered knowledge base for startups — connect data sources, upload documents, and pull out what matters through a chat panel.\n\nI ship software with AWS, Terraform, LlamaIndex, LangChain, Python, TypeScript, and more. I also use tools like Cursor and Claude Code to move faster while keeping a strong focus on code quality."
+      "description": "Software engineer with more than four years of experience building backend, serverless, and cloud-native systems with Python and AWS.",
+      "body": "My background includes production debugging, security-focused development, infrastructure as code, cloud automation, and reliable backend service design. I also use Cursor to accelerate my development workflow, improve code quality, explore solutions, and increase delivery speed while maintaining technical judgment and ownership of the code.\n\nMy main professional experience has been at Fluid Attacks as a Security Developer, where I built multiple features and worked across analytics, engineering, and incident management.\n\nI'm especially interested in roles where I can contribute to scalable systems, improve reliability, and build maintainable software in production environments.\n\nI'm also developing expertise in AI-assisted software systems, including RAG applications and AI agents, with a practical focus on using AI to solve real business and engineering problems.\n\nAs a hobby and part of my personal brand, I enjoy writing articles on Medium. If you'd like to read them, you can find them at articles.etobo.tech.\n\nTech stack: Cursor, Python, FastAPI, AWS Lambda, S3, EC2, RDS, DynamoDB, CloudWatch, ECS, Bedrock, API Gateway, EventBridge, SNS, SSM, Terraform, Docker, GitLab, Git, Bash, LangChain, LangGraph, and LangSmith."
     },
     "contact": {
       "title": "Contact",

@@ -145,12 +145,53 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
   if (pageKey === "about") {
     const body = dict.pages.about.body;
     const paragraphs = body.split("\n\n");
+    const linkClassName =
+      "font-medium text-terracotta transition-colors hover:text-terracotta-dark";
+    const aboutLinks: { label: string; href: string }[] = [
+      {
+        label: "Fluid Attacks",
+        href: buildOutboundUrl("https://fluidattacks.com"),
+      },
+      {
+        label: "articles.etobo.tech",
+        href: buildOutboundUrl(socialLinks.medium),
+      },
+    ];
+
+    function renderAboutParagraph(paragraph: string, paragraphIndex: number) {
+      const pattern = new RegExp(
+        `(${aboutLinks.map((link) => link.label.replace(/\./g, "\\.")).join("|")})`,
+        "g",
+      );
+      const hrefByLabel = Object.fromEntries(
+        aboutLinks.map((link) => [link.label, link.href]),
+      );
+      const parts = paragraph.split(pattern);
+
+      return parts.map((part, partIndex) => {
+        const href = hrefByLabel[part];
+        if (!href) return part;
+
+        return (
+          <a
+            key={`${paragraphIndex}-${partIndex}`}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={linkClassName}
+          >
+            {part}
+          </a>
+        );
+      });
+    }
+
     return (
       <>
         <PageShell title={meta.title} description={meta.description}>
           <div className="space-y-4">
             {paragraphs.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
+              <p key={index}>{renderAboutParagraph(paragraph, index)}</p>
             ))}
           </div>
         </PageShell>
