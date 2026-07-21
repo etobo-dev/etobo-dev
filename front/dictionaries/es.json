@@ -12,6 +12,7 @@
     "contact": "Contacto",
     "cta": "Trabajemos juntos →",
     "downloadCv": "Descargar HV",
+    "viewCv": "Ver HV",
     "menuOpen": "Abrir menú",
     "menuClose": "Cerrar menú"
   },
@@ -81,6 +82,13 @@
       "email": "contact@etobo.tech",
       "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",
       "linkedinLabel": "LinkedIn"
+    },
+    "cv": {
+      "title": "Hoja de vida",
+      "description": "Consulta mi hoja de vida en línea, o descarga el PDF.",
+      "downloadEn": "Descargar en inglés",
+      "downloadEs": "Descargar en español",
+      "openPdf": "Abrir PDF"
     }
   }
 }

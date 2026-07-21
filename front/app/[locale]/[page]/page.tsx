@@ -2,6 +2,7 @@ import ArticleItem from "@/components/ArticleItem";
 import BrandIcon from "@/components/BrandIcon";
 import Button from "@/components/Button";
 import CredentialCard from "@/components/CredentialCard";
+import CvViewer from "@/components/CvViewer";
 import FooterCTA from "@/components/FooterCTA";
 import PageShell from "@/components/PageShell";
 import ProjectCard from "@/components/ProjectCard";
@@ -41,6 +42,7 @@ export async function generateStaticParams() {
       "credentials",
       "about",
       "contact",
+      "cv",
     ] as const) {
       params.push({ locale, page: localizedPaths[page][locale] });
     }
@@ -229,6 +231,15 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
             </div>
           </div>
         </PageShell>
+        <FooterCTA locale={locale} dict={dict} />
+      </>
+    );
+  }
+
+  if (pageKey === "cv") {
+    return (
+      <>
+        <CvViewer locale={locale} dict={dict} />
         <FooterCTA locale={locale} dict={dict} />
       </>
     );
