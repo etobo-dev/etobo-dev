@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Elver Tobo — Ingeniero de Software | Python | AWS | Seguridad | IA",
-    "description": "Sistemas backend con Python y cloud AWS. Portafolio de Elver Tobo."
+    "title": "Elver Tobo — Ingeniero de Software Backend | Python | AWS | Seguridad | IA",
+    "description": "Contrata a Elver Tobo — ingeniero de software backend especializado en Python, FastAPI, AWS serverless, seguridad e IA práctica. Abierto a roles remotos. Portafolio: NotiCrypt y Knowforge."
   },
   "nav": {
     "home": "Inicio",
@@ -78,12 +78,12 @@
     },
     "about": {
       "title": "Sobre mí",
-      "description": "Ingeniero de software con más de cuatro años de experiencia construyendo sistemas backend, serverless y cloud-native con Python y AWS.",
+      "description": "Sobre Elver Tobo — ingeniero de software backend con más de 4 años construyendo sistemas Python, AWS serverless y cloud-native. Background en seguridad; abierto a roles remotos.",
       "body": "Mi trayectoria incluye debugging en producción, desarrollo con enfoque en seguridad, infraestructura como código, automatización en la nube y diseño de servicios backend confiables. También uso Cursor para acelerar mi flujo de trabajo, mejorar la calidad del código, explorar soluciones y aumentar la velocidad de entrega, manteniendo criterio técnico y ownership del código.\n\nMi principal experiencia profesional ha sido en Fluid Attacks como Security Developer, donde desarrollé múltiples funcionalidades y pude trabajar en las áreas de analítica, ingeniería y gestión de incidentes.\n\nMe interesan especialmente los roles en los que pueda contribuir a sistemas escalables, mejorar la confiabilidad y construir software mantenible en entornos de producción.\n\nTambién estoy desarrollando expertise en sistemas de software asistidos por IA, incluyendo aplicaciones RAG y agentes de IA, con un enfoque práctico en usar IA para resolver problemas reales de negocio e ingeniería.\n\nComo hobby y parte de mi marca personal, me gusta escribir artículos en Medium. Si quieres leerlos, puedes encontrarlos en articles.etobo.tech.\n\nStack tecnológico: Cursor, Python, FastAPI, AWS Lambda, S3, EC2, RDS, DynamoDB, CloudWatch, ECS, Bedrock, API Gateway, EventBridge, SNS, SSM, Terraform, Docker, GitLab, Git, Bash, LangChain, LangGraph y LangSmith."
     },
     "contact": {
       "title": "Contacto",
-      "description": "Conectemos.",
+      "description": "Contacta a Elver Tobo — ingeniero backend (Python, AWS, seguridad, IA). Correo o LinkedIn para roles remotos, consultoría y colaboraciones.",
       "body": "La mejor forma de contactarme es por correo o LinkedIn. Estoy abierto a colaboraciones, consultoría y oportunidades interesantes, y siempre me gusta hablar de sistemas backend, arquitectura cloud y herramientas de IA.",
       "email": "contact@etobo.tech",
       "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",
