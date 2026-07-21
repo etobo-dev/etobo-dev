@@ -60,6 +60,8 @@ export type Dictionary = {
   };
   projects: {
     viewProject: string;
+    viewSite: string;
+    viewRepo: string;
     githubProfile: string;
     gitlabProfile: string;
   };
