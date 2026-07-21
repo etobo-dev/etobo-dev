@@ -44,6 +44,8 @@
     "viewProject": "View project →",
     "viewSite": "View project",
     "viewRepo": "View repository",
+    "showMoreTech": "+{count} more",
+    "showLessTech": "Show less",
     "githubProfile": "GitHub profile →",
     "gitlabProfile": "GitLab profile →"
   },
@@ -84,6 +86,7 @@
       "description": "Contact Elver Tobo — backend engineer (Python, AWS, security, AI). Email or LinkedIn for remote roles, consulting, and collaborations.",
       "body": "The best way to reach me is by email or LinkedIn. I'm open to collaborations, consulting, and interesting opportunities, and I'm always happy to talk about backend systems, cloud architecture, and AI tooling.",
       "email": "contact@etobo.tech",
+      "emailLabel": "Email",
       "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",
       "linkedinLabel": "LinkedIn"
     }

@@ -8,6 +8,7 @@ import {
 } from "@/lib/i18n";
 
 const LOCALE_COOKIE = "NEXT_LOCALE";
+const RETIRED_SLUGS = new Set(["cv", "hoja-de-vida"]);
 
 function getPreferredLocale(request: NextRequest): Locale {
   const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
@@ -45,6 +46,13 @@ export function proxy(request: NextRequest) {
 
   if (isValidLocale(pathnameLocale)) {
     const slug = segments[1] ?? "";
+
+    if (RETIRED_SLUGS.has(slug)) {
+      const url = request.nextUrl.clone();
+      url.pathname = `/${pathnameLocale}`;
+      return withLocaleCookie(NextResponse.redirect(url), pathnameLocale);
+    }
+
     const pageKey = getPageKeyFromAnySlug(slug);
     const canonicalPath = pageKey
       ? getLocalizedPath(pathnameLocale, pageKey)
@@ -61,6 +69,13 @@ export function proxy(request: NextRequest) {
 
   const locale = getPreferredLocale(request);
   const slug = segments[0] ?? "";
+
+  if (RETIRED_SLUGS.has(slug)) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${locale}`;
+    return withLocaleCookie(NextResponse.redirect(url), locale);
+  }
+
   const pageKey = getPageKeyFromAnySlug(slug);
   const url = request.nextUrl.clone();
   url.pathname = pageKey

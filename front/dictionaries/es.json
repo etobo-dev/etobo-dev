@@ -44,6 +44,8 @@
     "viewProject": "Ver proyecto →",
     "viewSite": "Ver proyecto",
     "viewRepo": "Ver repositorio",
+    "showMoreTech": "+{count} más",
+    "showLessTech": "Ver menos",
     "githubProfile": "Perfil de GitHub →",
     "gitlabProfile": "Perfil de GitLab →"
   },
@@ -84,6 +86,7 @@
       "description": "Contacta a Elver Tobo — ingeniero backend (Python, AWS, seguridad, IA). Correo o LinkedIn para roles remotos, consultoría y colaboraciones.",
       "body": "La mejor forma de contactarme es por correo o LinkedIn. Estoy abierto a colaboraciones, consultoría y oportunidades interesantes, y siempre me gusta hablar de sistemas backend, arquitectura cloud y herramientas de IA.",
       "email": "contact@etobo.tech",
+      "emailLabel": "Correo",
       "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",
       "linkedinLabel": "LinkedIn"
     }
