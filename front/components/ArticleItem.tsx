@@ -25,11 +25,7 @@ export default function ArticleItem({ article, dict }: ArticleItemProps) {
           alt=""
           fill
           sizes="64px"
-          className="media-harmonize-image object-cover"
-        />
-        <div
-          className="media-harmonize-overlay pointer-events-none absolute inset-0"
-          aria-hidden="true"
+          className="object-cover"
         />
       </div>
 

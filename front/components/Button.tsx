@@ -41,7 +41,10 @@ export default function Button({
     </>
   );
 
-  if (external || download !== undefined) {
+  const useAnchor =
+    external || download !== undefined || href.startsWith("mailto:");
+
+  if (useAnchor) {
     return (
       <a
         href={href}

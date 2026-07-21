@@ -100,6 +100,7 @@ export function buildPersonJsonLd(locale: Locale) {
           socialLinks.linkedin,
           socialLinks.medium,
           socialLinks.x,
+          socialLinks.credly,
         ],
         knowsAbout: [
           "AWS",
