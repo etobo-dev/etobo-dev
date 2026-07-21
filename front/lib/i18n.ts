@@ -9,7 +9,6 @@ export const localizedPaths = {
   credentials: { en: "credentials", es: "certificaciones" },
   about: { en: "about", es: "sobre-mi" },
   contact: { en: "contact", es: "contacto" },
-  cv: { en: "cv", es: "hoja-de-vida" },
 } as const;
 
 export type PageKey = keyof typeof localizedPaths;
@@ -27,8 +26,6 @@ export type Dictionary = {
     about: string;
     contact: string;
     cta: string;
-    downloadCv: string;
-    viewCv: string;
     menuOpen: string;
     menuClose: string;
   };
@@ -105,13 +102,6 @@ export type Dictionary = {
       linkedinUrl: string;
       linkedinLabel: string;
     };
-    cv: {
-      title: string;
-      description: string;
-      downloadEn: string;
-      downloadEs: string;
-      openPdf: string;
-    };
   };
 };
 
@@ -142,7 +132,7 @@ export function getPageKeyFromSlug(
   return null;
 }
 
-/** Resolve a page from either language slug (e.g. "cv" or "hoja-de-vida"). */
+/** Resolve a page from either language slug (e.g. "projects" or "proyectos"). */
 export function getPageKeyFromAnySlug(slug: string): PageKey | null {
   if (!slug) return "home";
 

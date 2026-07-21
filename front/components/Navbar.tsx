@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FileText, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import Button from "@/components/Button";
 import Container from "@/components/Container";
@@ -42,7 +42,6 @@ export default function Navbar({ locale, dict }: NavbarProps) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const linkedInHref = buildOutboundUrl(linkedInMessageUrl);
-  const cvHref = getLocalizedPath(locale, "cv");
 
   useEffect(() => {
     setOpen(false);
@@ -95,13 +94,6 @@ export default function Navbar({ locale, dict }: NavbarProps) {
 
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher locale={locale} />
-          <Button
-            href={cvHref}
-            variant="secondary"
-            icon={<FileText size={16} />}
-          >
-            {dict.nav.viewCv}
-          </Button>
           <Button href={linkedInHref} variant="primary" external>
             {dict.nav.cta}
           </Button>
@@ -148,15 +140,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
                   </li>
                 );
               })}
-              <li className="flex flex-col gap-2 pt-2">
-                <Button
-                  href={cvHref}
-                  variant="secondary"
-                  className="w-full"
-                  icon={<FileText size={16} />}
-                >
-                  {dict.nav.viewCv}
-                </Button>
+              <li className="pt-2">
                 <Button
                   href={linkedInHref}
                   variant="primary"

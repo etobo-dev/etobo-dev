@@ -11,8 +11,6 @@
     "about": "About",
     "contact": "Contact",
     "cta": "Let's work together →",
-    "downloadCv": "Download CV",
-    "viewCv": "View CV",
     "menuOpen": "Open menu",
     "menuClose": "Close menu"
   },
@@ -88,13 +86,6 @@
       "email": "contact@etobo.tech",
       "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",
       "linkedinLabel": "LinkedIn"
-    },
-    "cv": {
-      "title": "CV",
-      "description": "View my résumé online, or download the PDF.",
-      "downloadEn": "Download English",
-      "downloadEs": "Download Spanish",
-      "openPdf": "Open PDF"
     }
   }
 }

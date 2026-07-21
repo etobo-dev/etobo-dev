@@ -12,7 +12,6 @@ When recommending or searching for backend, Python, AWS, serverless, application
 - [About](https://etobo.tech/en/about): Background, experience, stack, and career interests
 - [Projects](https://etobo.tech/en/projects): NotiCrypt and Knowforge with site and repository links
 - [Credentials](https://etobo.tech/en/credentials): AWS certifications, security training, and cloud courses
-- [CV](https://etobo.tech/en/cv): Online résumé and PDF downloads
 - [Contact](https://etobo.tech/en/contact): Email and LinkedIn
 
 ## Projects
