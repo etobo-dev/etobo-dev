@@ -1,4 +1,6 @@
 import ArticleItem from "@/components/ArticleItem";
+import BrandIcon from "@/components/BrandIcon";
+import Button from "@/components/Button";
 import CredentialCard from "@/components/CredentialCard";
 import FooterCTA from "@/components/FooterCTA";
 import PageShell from "@/components/PageShell";
@@ -19,6 +21,7 @@ import { socialLinks } from "@/lib/site";
 import { buildOutboundUrl } from "@/lib/utm";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Mail } from "lucide-react";
 
 type DynamicPageProps = {
   params: Promise<{ locale: string; page: string }>;
@@ -207,26 +210,23 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
         <PageShell title={meta.title} description={meta.description}>
           <div className="space-y-6">
             <p>{contact.body}</p>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  href={`mailto:${contact.email}`}
-                  className="font-medium text-terracotta transition-colors hover:text-terracotta-dark"
-                >
-                  {contact.email}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={buildOutboundUrl(socialLinks.linkedin)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-terracotta transition-colors hover:text-terracotta-dark"
-                >
-                  {contact.linkedinLabel}
-                </a>
-              </li>
-            </ul>
+            <div className="flex flex-wrap gap-3">
+              <Button
+                href={`mailto:${contact.email}`}
+                variant="primary"
+                icon={<Mail size={16} />}
+              >
+                {contact.email}
+              </Button>
+              <Button
+                href={buildOutboundUrl(socialLinks.linkedin)}
+                variant="secondary"
+                icon={<BrandIcon brand="linkedin" size={16} />}
+                external
+              >
+                {contact.linkedinLabel}
+              </Button>
+            </div>
           </div>
         </PageShell>
         <FooterCTA locale={locale} dict={dict} />

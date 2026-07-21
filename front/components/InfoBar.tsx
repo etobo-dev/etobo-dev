@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mail } from "lucide-react";
+import { BadgeCheck, Mail } from "lucide-react";
 import BrandIcon from "@/components/BrandIcon";
 import Container from "@/components/Container";
 import type { Dictionary } from "@/lib/i18n";
@@ -41,6 +41,12 @@ const links = [
     labelKey: "x" as const,
     brand: "x" as const,
   },
+  {
+    key: "credly" as const,
+    href: socialLinks.credly,
+    labelKey: "credly" as const,
+    brand: null,
+  },
 ] as const;
 
 function ContactLink({
@@ -63,6 +69,8 @@ function ContactLink({
     >
       {link.brand ? (
         <BrandIcon brand={link.brand} className="shrink-0 text-charcoal" />
+      ) : link.key === "credly" ? (
+        <BadgeCheck size={16} className="shrink-0 text-charcoal" />
       ) : (
         <Mail size={16} className="shrink-0 text-charcoal" />
       )}
@@ -97,7 +105,7 @@ export default function InfoBar({ dict }: InfoBarProps) {
             </div>
           </div>
 
-          <div className="grid min-w-0 flex-1 grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5">
+          <div className="grid min-w-0 flex-1 grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
             {links.map((link) => (
               <ContactLink
                 key={link.key}

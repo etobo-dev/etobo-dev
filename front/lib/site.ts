@@ -11,6 +11,7 @@ export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/elver-tobo/",
   medium: "https://articles.etobo.tech",
   x: "https://x.com/_etobo_",
+  credly: "https://www.credly.com/users/elver-tobo/badges/credly",
 } as const;
 
 export const seoKeywords = {
