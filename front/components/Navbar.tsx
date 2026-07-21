@@ -2,12 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Download, Menu, X } from "lucide-react";
+import { FileText, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import Button from "@/components/Button";
 import Container from "@/components/Container";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { getCv } from "@/lib/cv";
 import { linkedInMessageUrl } from "@/lib/links";
 import {
   getLocalizedPath,
@@ -22,14 +21,14 @@ type NavbarProps = {
   dict: Dictionary;
 };
 
-const navItems: PageKey[] = [
+const navItems = [
   "home",
   "projects",
   "articles",
   "credentials",
   "about",
   "contact",
-];
+] as const satisfies readonly PageKey[];
 
 function isActive(pathname: string, locale: Locale, page: PageKey): boolean {
   const href = getLocalizedPath(locale, page);
@@ -43,7 +42,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const linkedInHref = buildOutboundUrl(linkedInMessageUrl);
-  const cv = getCv(locale);
+  const cvHref = getLocalizedPath(locale, "cv");
 
   useEffect(() => {
     setOpen(false);
@@ -56,7 +55,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
     };
   }, [open]);
 
-  const navLabels: Record<PageKey, string> = {
+  const navLabels: Record<(typeof navItems)[number], string> = {
     home: dict.nav.home,
     projects: dict.nav.projects,
     articles: dict.nav.articles,
@@ -97,12 +96,11 @@ export default function Navbar({ locale, dict }: NavbarProps) {
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher locale={locale} />
           <Button
-            href={cv.href}
+            href={cvHref}
             variant="secondary"
-            icon={<Download size={16} />}
-            external
+            icon={<FileText size={16} />}
           >
-            {dict.nav.downloadCv}
+            {dict.nav.viewCv}
           </Button>
           <Button href={linkedInHref} variant="primary" external>
             {dict.nav.cta}
@@ -152,13 +150,12 @@ export default function Navbar({ locale, dict }: NavbarProps) {
               })}
               <li className="flex flex-col gap-2 pt-2">
                 <Button
-                  href={cv.href}
+                  href={cvHref}
                   variant="secondary"
                   className="w-full"
-                  icon={<Download size={16} />}
-                  external
+                  icon={<FileText size={16} />}
                 >
-                  {dict.nav.downloadCv}
+                  {dict.nav.viewCv}
                 </Button>
                 <Button
                   href={linkedInHref}
