@@ -26,7 +26,9 @@ export default function ProjectCard({
       rel="noopener noreferrer"
       className="group flex min-w-0 items-start gap-4 rounded-2xl border border-border bg-white p-4 transition-shadow hover:shadow-soft sm:p-5"
     >
-      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-dusty-rose text-terracotta">
+      <div
+        className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${project.iconBackground} ${project.iconColor}`}
+      >
         <Icon size={22} strokeWidth={1.75} />
       </div>
 

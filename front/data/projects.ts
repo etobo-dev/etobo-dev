@@ -5,6 +5,8 @@ import type { LucideIcon } from "lucide-react";
 export type Project = {
   id: string;
   icon: LucideIcon;
+  iconColor: string;
+  iconBackground: string;
   title: Record<Locale, string>;
   description: Record<Locale, string>;
   techStack: string[];
@@ -16,6 +18,8 @@ export const projects: Project[] = [
   {
     id: "knowforge",
     icon: Database,
+    iconColor: "text-indigo-600",
+    iconBackground: "bg-indigo-100",
     title: {
       en: "Knowforge",
       es: "Knowforge",
@@ -42,6 +46,8 @@ export const projects: Project[] = [
   {
     id: "noticrypt",
     icon: LineChart,
+    iconColor: "text-emerald-600",
+    iconBackground: "bg-emerald-100",
     title: {
       en: "NotiCrypt",
       es: "NotiCrypt",
@@ -52,14 +58,26 @@ export const projects: Project[] = [
     },
     techStack: [
       "Python",
-      "AWS",
       "TypeScript",
-      "Telegram API",
+      "React",
+      "Vite",
+      "FastAPI",
+      "Aiogram",
+      "SQLAlchemy",
+      "LangGraph",
+      "LangChain",
       "OpenAI",
-      "Tavily",
-      "Apify",
-      "Next.js",
-      "Vercel",
+      "LangSmith",
+      "Lambda",
+      "EC2",
+      "DynamoDB",
+      "S3",
+      "SNS",
+      "PostgreSQL",
+      "Terraform",
+      "GitLab CI/CD",
+      "Bugsnag",
+      "uv",
     ],
     href: "https://noticrypt.tech",
     featured: true,

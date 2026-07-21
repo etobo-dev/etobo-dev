@@ -47,6 +47,7 @@ export type Dictionary = {
     medium: string;
     linkedin: string;
     x: string;
+    credly: string;
   };
   sections: {
     featuredProjects: string;
