@@ -10,39 +10,12 @@ export type Project = {
   title: Record<Locale, string>;
   description: Record<Locale, string>;
   techStack: string[];
-  href: string;
+  site: string;
+  repo: string;
   featured?: boolean;
 };
 
 export const projects: Project[] = [
-  {
-    id: "knowforge",
-    icon: Database,
-    iconColor: "text-indigo-600",
-    iconBackground: "bg-indigo-100",
-    title: {
-      en: "Knowforge",
-      es: "Knowforge",
-    },
-    description: {
-      en: "Multi-tenant SaaS that turns company documents into RAG-powered knowledge bases — upload files, semantic search, and chat with your docs in secure workspaces.",
-      es: "SaaS multi-tenant que convierte documentos empresariales en bases de conocimiento con RAG: carga archivos, búsqueda semántica y chat con tu documentación en espacios seguros.",
-    },
-    techStack: [
-      "Python",
-      "TypeScript",
-      "RAG",
-      "AWS",
-      "Terraform",
-      "LlamaIndex",
-      "OpenAI",
-      "Supabase",
-      "Next.js",
-      "Vercel",
-    ],
-    href: "https://github.com/etobo-tech/knowforge",
-    featured: true,
-  },
   {
     id: "noticrypt",
     icon: LineChart,
@@ -79,7 +52,37 @@ export const projects: Project[] = [
       "Bugsnag",
       "uv",
     ],
-    href: "https://noticrypt.tech",
+    site: "https://noticrypt.tech",
+    repo: "https://gitlab.com/elverytr/noticrypt",
+    featured: true,
+  },
+  {
+    id: "knowforge",
+    icon: Database,
+    iconColor: "text-indigo-600",
+    iconBackground: "bg-indigo-100",
+    title: {
+      en: "Knowforge",
+      es: "Knowforge",
+    },
+    description: {
+      en: "Multi-tenant SaaS that turns company documents into RAG-powered knowledge bases — upload files, semantic search, and chat with your docs in secure workspaces.",
+      es: "SaaS multi-tenant que convierte documentos empresariales en bases de conocimiento con RAG: carga archivos, búsqueda semántica y chat con tu documentación en espacios seguros.",
+    },
+    techStack: [
+      "Python",
+      "TypeScript",
+      "RAG",
+      "AWS",
+      "Terraform",
+      "LlamaIndex",
+      "OpenAI",
+      "Supabase",
+      "Next.js",
+      "Vercel",
+    ],
+    site: "https://knowforge.etobo.tech",
+    repo: "https://github.com/etobo-tech/knowforge",
     featured: true,
   },
 ];

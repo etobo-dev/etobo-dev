@@ -44,6 +44,8 @@
   },
   "projects": {
     "viewProject": "View project →",
+    "viewSite": "View project",
+    "viewRepo": "View repository",
     "githubProfile": "GitHub profile →",
     "gitlabProfile": "GitLab profile →"
   },
@@ -64,7 +66,7 @@
   "pages": {
     "projects": {
       "title": "Projects",
-      "description": "The main products I'm building and shipping today — Knowforge and NotiCrypt."
+      "description": "The main products I'm building and shipping today — NotiCrypt and Knowforge."
     },
     "articles": {
       "title": "Articles",

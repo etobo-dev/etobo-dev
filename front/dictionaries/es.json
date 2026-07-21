@@ -44,6 +44,8 @@
   },
   "projects": {
     "viewProject": "Ver proyecto →",
+    "viewSite": "Ver proyecto",
+    "viewRepo": "Ver repositorio",
     "githubProfile": "Perfil de GitHub →",
     "gitlabProfile": "Perfil de GitLab →"
   },
@@ -64,7 +66,7 @@
   "pages": {
     "projects": {
       "title": "Proyectos",
-      "description": "Los productos principales que estoy desarrollando y llevando a producción — Knowforge y NotiCrypt."
+      "description": "Los productos principales que estoy desarrollando y llevando a producción — NotiCrypt y Knowforge."
     },
     "articles": {
       "title": "Artículos",
