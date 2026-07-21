@@ -93,6 +93,24 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
     return (
       <>
         <PageShell title={meta.title} description={meta.description}>
+          <div className="flex flex-wrap gap-3">
+            <Button
+              href={buildOutboundUrl(socialLinks.github)}
+              variant="secondary"
+              icon={<BrandIcon brand="github" size={16} />}
+              external
+            >
+              {dict.projects.githubProfile}
+            </Button>
+            <Button
+              href={buildOutboundUrl(socialLinks.gitlab)}
+              variant="secondary"
+              icon={<BrandIcon brand="gitlab" size={16} />}
+              external
+            >
+              {dict.projects.gitlabProfile}
+            </Button>
+          </div>
           <div className="mt-8 flex flex-col gap-4">
             {projects.map((project) => (
               <ProjectCard
@@ -113,6 +131,16 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
     return (
       <>
         <PageShell title={meta.title} description={meta.description}>
+          <div className="flex flex-wrap gap-3">
+            <Button
+              href={buildOutboundUrl(socialLinks.medium)}
+              variant="secondary"
+              icon={<BrandIcon brand="medium" size={16} />}
+              external
+            >
+              {dict.articles.viewAll}
+            </Button>
+          </div>
           <div className="mt-8 flex flex-col gap-4">
             {articles.map((article) => (
               <ArticleItem
