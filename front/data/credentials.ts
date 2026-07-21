@@ -10,15 +10,15 @@ export type Credential = {
   imageUrl: string;
 };
 
-/** Links verified via LinkedIn, Credly, LangChain Academy, and issuer portals. */
+/** Links verified via LinkedIn, Credly, Udemy, and issuer portals. */
 export const credentials: Credential[] = [
   {
-    id: "langchain-intro-python",
+    id: "udemy-langchain-langgraph-agents",
     type: "certification",
-    title: "Introduction to LangChain - Python",
-    issuer: "LangChain",
-    date: "May 2026",
-    href: "https://academy.langchain.com/certificates/ag1b2id18r",
+    title: "Curso Completo: LangChain, LangGraph y Agentes IA con Python",
+    issuer: "Udemy",
+    date: "Jul 2026",
+    href: "https://www.udemy.com/certificate/UC-2b2dcbb3-a36d-4a73-ac55-96f2d7e293b7/",
     imageUrl:
       "https://import.cdn.thinkific.com/967498/custom_site_themes/id/c5pEwJslQAuMpkpx5BKz_Light-rounded%20corners-2x.png",
   },
