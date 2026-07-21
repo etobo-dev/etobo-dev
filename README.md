@@ -41,11 +41,11 @@ Also exploring practical AI for real products: RAG, agents, LangChain / LangGrap
 
 ### Featured work
 
-| Project | What it is |
-|---|---|
-| **[Knowforge](https://github.com/etobo-tech/knowforge)** | Multi-tenant SaaS that turns company docs into RAG knowledge bases |
-| **[NotiCrypt](https://noticrypt.tech)** | Crypto market monitor with event detection and timely alerts |
-| **[etobo.tech](https://etobo.tech)** | Personal portfolio — bilingual EN / ES |
+| Project | What it is | Site | Repo |
+|---|---|---|---|
+| **NotiCrypt** | Crypto market monitor with event detection and timely alerts | [noticrypt.tech](https://noticrypt.tech) | [GitLab](https://gitlab.com/elverytr/noticrypt) |
+| **Knowforge** | Multi-tenant SaaS that turns company docs into RAG knowledge bases | [knowforge.etobo.tech](https://knowforge.etobo.tech) | [GitHub](https://github.com/etobo-tech/knowforge) |
+| **etobo.tech** | Personal portfolio — bilingual EN / ES | [etobo.tech](https://etobo.tech) | [GitHub](https://github.com/etobo-dev/etobo-dev) |
 
 ---
 

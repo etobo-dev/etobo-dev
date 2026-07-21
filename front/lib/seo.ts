@@ -77,8 +77,8 @@ export function buildPageMetadata({
 export function buildPersonJsonLd(locale: Locale) {
   const description =
     locale === "es"
-      ? "Ingeniero de software especializado en IA, RAG, agentes y AWS. Creador de Knowforge y NotiCrypt."
-      : "Software engineer specializing in AI, RAG, agents, and AWS. Builder of Knowforge and NotiCrypt.";
+      ? "Ingeniero de software especializado en IA, RAG, agentes y AWS. Creador de NotiCrypt y Knowforge."
+      : "Software engineer specializing in AI, RAG, agents, and AWS. Builder of NotiCrypt and Knowforge.";
 
   return {
     "@context": "https://schema.org",
@@ -110,8 +110,8 @@ export function buildPersonJsonLd(locale: Locale) {
           "Python",
           "TypeScript",
           "Terraform",
-          "Knowforge",
           "NotiCrypt",
+          "Knowforge",
         ],
         worksFor: {
           "@type": "Organization",
@@ -129,22 +129,22 @@ export function buildPersonJsonLd(locale: Locale) {
       },
       {
         "@type": "SoftwareApplication",
-        name: "Knowforge",
-        applicationCategory: "BusinessApplication",
-        operatingSystem: "Web",
-        url: "https://github.com/etobo-tech/knowforge",
-        description:
-          "Multi-tenant SaaS knowledge base powered by RAG for startups.",
-        author: { "@id": `${siteUrl}/#person` },
-      },
-      {
-        "@type": "SoftwareApplication",
         name: "NotiCrypt",
         applicationCategory: "FinanceApplication",
         operatingSystem: "Web",
         url: "https://noticrypt.tech",
         description:
           "Cryptocurrency market monitoring with event detection and alerts.",
+        author: { "@id": `${siteUrl}/#person` },
+      },
+      {
+        "@type": "SoftwareApplication",
+        name: "Knowforge",
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        url: "https://knowforge.etobo.tech",
+        description:
+          "Multi-tenant SaaS knowledge base powered by RAG for startups.",
         author: { "@id": `${siteUrl}/#person` },
       },
     ],
