@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Elver Tobo — Ingeniero de Software | Agentes IA | Python | 2× Certificado AWS",
-    "description": "Productos completos con IA, RAG, agentes y cloud AWS. Portafolio de Elver Tobo."
+    "title": "Elver Tobo — Ingeniero de Software | Python | AWS | Seguridad | IA",
+    "description": "Sistemas backend con Python y cloud AWS. Portafolio de Elver Tobo."
   },
   "nav": {
     "home": "Inicio",
@@ -17,19 +17,20 @@
     "menuClose": "Cerrar menú"
   },
   "hero": {
-    "label": "AWS • IA • RAG • AGENTES",
-    "headlineBefore": "Construyo productos completos con ",
-    "headlineHighlight": "IA, RAG y agentes",
-    "headlineAfter": " utilizando servicios cloud de AWS.",
-    "subtext": "Entrega de punta a punta — backend, infraestructura cloud y sistemas inteligentes listos para producción y escala.",
+    "label": "PYTHON • BACKEND • AWS",
+    "headlineBefore": "",
+    "headlineHighlight": "Sistemas backend",
+    "headlineAfter": " con Python y servicios cloud de AWS.",
+    "subtext": "Entrega de punta a punta — APIs, servicios serverless e infraestructura cloud listos para producción y escala.",
     "viewProjects": "Ver proyectos",
     "readArticles": "Leer artículos"
   },
   "profile": {
     "name": "Elver Tobo",
-    "title": "Ingeniero de Software | Agentes IA | Python | 2× Certificado AWS",
+    "title": "Ingeniero de Software | Python | AWS | Seguridad | IA",
     "email": "contact@etobo.tech",
     "github": "github.com/etobo-dev",
+    "gitlab": "gitlab.com/elverytr",
     "medium": "articles.etobo.tech",
     "linkedin": "linkedin.com/in/elver-tobo",
     "x": "x.com/_etobo_",
@@ -42,10 +43,13 @@
     "viewAllArticles": "Ver todos los artículos →"
   },
   "projects": {
-    "viewProject": "Ver proyecto →"
+    "viewProject": "Ver proyecto →",
+    "githubProfile": "Perfil de GitHub →",
+    "gitlabProfile": "Perfil de GitLab →"
   },
   "articles": {
-    "minRead": "min de lectura"
+    "minRead": "min de lectura",
+    "viewAll": "Ver todos los artículos →"
   },
   "credentials": {
     "certification": "Certificación",

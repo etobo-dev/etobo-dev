@@ -24,6 +24,12 @@ const links = [
     brand: "github" as const,
   },
   {
+    key: "gitlab" as const,
+    href: socialLinks.gitlab,
+    labelKey: "gitlab" as const,
+    brand: "gitlab" as const,
+  },
+  {
     key: "medium" as const,
     href: socialLinks.medium,
     labelKey: "medium" as const,
@@ -65,16 +71,18 @@ function ContactLink({
       target={link.key === "email" ? undefined : "_blank"}
       rel={link.key === "email" ? undefined : "noopener noreferrer"}
       title={label}
-      className="flex min-w-0 items-center gap-2 text-xs text-charcoal transition-colors hover:text-terracotta sm:text-sm"
+      className="group flex min-w-0 items-center gap-2 text-xs text-charcoal sm:text-sm"
     >
       {link.brand ? (
-        <BrandIcon brand={link.brand} className="shrink-0 text-charcoal" />
+        <BrandIcon brand={link.brand} className="shrink-0" />
       ) : link.key === "credly" ? (
-        <BadgeCheck size={16} className="shrink-0 text-charcoal" />
+        <BadgeCheck size={16} className="shrink-0 text-[#FF6C37]" />
       ) : (
-        <Mail size={16} className="shrink-0 text-charcoal" />
+        <Mail size={16} className="shrink-0 text-[#EA4335]" />
       )}
-      <span className="min-w-0 break-all leading-snug">{label}</span>
+      <span className="min-w-0 break-all leading-snug transition-colors group-hover:text-terracotta">
+        {label}
+      </span>
     </a>
   );
 }

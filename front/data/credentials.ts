@@ -15,7 +15,7 @@ export const credentials: Credential[] = [
   {
     id: "udemy-langchain-langgraph-agents",
     type: "certification",
-    title: "Curso Completo: LangChain, LangGraph y Agentes IA con Python",
+    title: "LangChain, LangGraph y Agentes IA con Python",
     issuer: "Udemy",
     date: "Jul 2026",
     href: "https://www.udemy.com/certificate/UC-2b2dcbb3-a36d-4a73-ac55-96f2d7e293b7/",

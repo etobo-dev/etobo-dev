@@ -8,6 +8,7 @@ export const pirschCode = "CYUrmtH7kcB30a93crH3x6VuswShdckE";
 export const socialLinks = {
   email: "contact@etobo.tech",
   github: "https://github.com/etobo-dev",
+  gitlab: "https://gitlab.com/elverytr",
   linkedin: "https://www.linkedin.com/in/elver-tobo/",
   medium: "https://articles.etobo.tech",
   x: "https://x.com/_etobo_",

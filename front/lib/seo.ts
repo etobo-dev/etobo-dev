@@ -97,6 +97,7 @@ export function buildPersonJsonLd(locale: Locale) {
         image: `${siteUrl}/profile.png`,
         sameAs: [
           socialLinks.github,
+          socialLinks.gitlab,
           socialLinks.linkedin,
           socialLinks.medium,
           socialLinks.x,
