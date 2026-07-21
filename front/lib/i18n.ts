@@ -46,6 +46,7 @@ export type Dictionary = {
     title: string;
     email: string;
     github: string;
+    gitlab: string;
     medium: string;
     linkedin: string;
     x: string;
@@ -59,9 +60,12 @@ export type Dictionary = {
   };
   projects: {
     viewProject: string;
+    githubProfile: string;
+    gitlabProfile: string;
   };
   articles: {
     minRead: string;
+    viewAll: string;
   };
   credentials: {
     certification: string;

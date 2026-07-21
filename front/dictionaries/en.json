@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Elver Tobo — Software Engineer | AI Agents | Python | 2× AWS Certified",
-    "description": "End-to-end products with AI, RAG, agents, and AWS cloud. Portfolio of Elver Tobo."
+    "title": "Elver Tobo — Software Engineer | Python | AWS | Security | AI",
+    "description": "Backend systems with Python and AWS cloud. Portfolio of Elver Tobo."
   },
   "nav": {
     "home": "Home",
@@ -17,19 +17,20 @@
     "menuClose": "Close menu"
   },
   "hero": {
-    "label": "AWS • AI • RAG • AGENTS",
-    "headlineBefore": "I build complete products with ",
-    "headlineHighlight": "AI, RAG & agents",
-    "headlineAfter": " using AWS cloud services.",
-    "subtext": "End-to-end delivery — backend, cloud infrastructure, and intelligent systems built to ship and scale.",
+    "label": "PYTHON • BACKEND • AWS",
+    "headlineBefore": "",
+    "headlineHighlight": "Backend systems",
+    "headlineAfter": " with Python and AWS cloud services.",
+    "subtext": "End-to-end delivery — APIs, serverless services, and cloud infrastructure built to ship and scale.",
     "viewProjects": "View Projects",
     "readArticles": "Read Articles"
   },
   "profile": {
     "name": "Elver Tobo",
-    "title": "Software Engineer | AI Agents | Python | 2× AWS Certified",
+    "title": "Software Engineer | Python | AWS | Security | AI",
     "email": "contact@etobo.tech",
     "github": "github.com/etobo-dev",
+    "gitlab": "gitlab.com/elverytr",
     "medium": "articles.etobo.tech",
     "linkedin": "linkedin.com/in/elver-tobo",
     "x": "x.com/_etobo_",
@@ -42,10 +43,13 @@
     "viewAllArticles": "View all articles →"
   },
   "projects": {
-    "viewProject": "View project →"
+    "viewProject": "View project →",
+    "githubProfile": "GitHub profile →",
+    "gitlabProfile": "GitLab profile →"
   },
   "articles": {
-    "minRead": "min read"
+    "minRead": "min read",
+    "viewAll": "View all articles →"
   },
   "credentials": {
     "certification": "Certification",
