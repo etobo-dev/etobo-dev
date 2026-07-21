@@ -10,6 +10,7 @@ type ButtonProps = {
   icon?: ReactNode;
   className?: string;
   external?: boolean;
+  download?: string | boolean;
 };
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -28,6 +29,7 @@ export default function Button({
   icon,
   className = "",
   external = false,
+  download,
 }: ButtonProps) {
   const baseStyles =
     "inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors";
@@ -39,12 +41,13 @@ export default function Button({
     </>
   );
 
-  if (external) {
+  if (external || download !== undefined) {
     return (
       <a
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        target={external ? "_blank" : undefined}
+        rel={external ? "noopener noreferrer" : undefined}
+        download={download}
         className={`${baseStyles} ${variantStyles[variant]} ${className}`}
       >
         {content}
