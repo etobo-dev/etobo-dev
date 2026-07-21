@@ -59,6 +59,8 @@ export type Dictionary = {
     viewProject: string;
     viewSite: string;
     viewRepo: string;
+    showMoreTech: string;
+    showLessTech: string;
     githubProfile: string;
     gitlabProfile: string;
   };
@@ -99,6 +101,7 @@ export type Dictionary = {
       description: string;
       body: string;
       email: string;
+      emailLabel: string;
       linkedinUrl: string;
       linkedinLabel: string;
     };
@@ -115,7 +118,9 @@ export async function getDictionary(locale: Locale): Promise<Dictionary> {
 }
 
 export function getLocalizedPath(locale: Locale, page: PageKey): string {
-  const segment = localizedPaths[page][locale];
+  const paths = localizedPaths[page];
+  if (!paths) return `/${locale}`;
+  const segment = paths[locale];
   return segment ? `/${locale}/${segment}` : `/${locale}`;
 }
 

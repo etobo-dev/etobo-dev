@@ -14,13 +14,13 @@ export default function PageShell({
   children,
 }: PageShellProps) {
   return (
-    <Container className="py-12 sm:py-16">
-      <div className="grid items-start gap-10 lg:grid-cols-[1fr_min(40%,26rem)] lg:gap-12 xl:grid-cols-[1fr_min(38%,30rem)] xl:gap-16">
+    <Container className="py-6 sm:py-12 lg:py-16">
+      <div className="grid items-start gap-8 lg:grid-cols-[1fr_min(40%,26rem)] lg:gap-12 xl:grid-cols-[1fr_min(38%,30rem)] xl:gap-16">
         <div className="min-w-0">
-          <h1 className="text-3xl font-bold text-charcoal sm:text-4xl">{title}</h1>
-          <p className="mt-3 text-lg text-body">{description}</p>
+          <h1 className="text-2xl font-bold text-charcoal sm:text-4xl">{title}</h1>
+          <p className="mt-2 text-base text-body sm:mt-3 sm:text-lg">{description}</p>
           {children && (
-            <div className="mt-8 text-base leading-relaxed text-body">{children}</div>
+            <div className="mt-4 text-base leading-relaxed text-body sm:mt-8">{children}</div>
           )}
         </div>
 

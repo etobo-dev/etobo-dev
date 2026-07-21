@@ -22,14 +22,14 @@ export default function CredentialCard({
       target="_blank"
       rel="noopener noreferrer"
       title={credential.title}
-      className="group relative flex aspect-square min-h-0 flex-col overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-white via-dusty-rose/35 to-beige/60 p-4 text-center transition-all hover:-translate-y-0.5 hover:border-terracotta/30 hover:shadow-soft"
+      className="group relative flex min-h-[11rem] flex-col overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-white via-dusty-rose/35 to-beige/60 p-4 text-center transition-all hover:-translate-y-0.5 hover:border-terracotta/30 hover:shadow-soft sm:aspect-square sm:min-h-0"
     >
       <span className="shrink-0 text-[0.625rem] font-bold tracking-[0.14em] text-terracotta uppercase">
         {typeLabel}
       </span>
 
       <div className="flex flex-1 flex-col items-center justify-center py-3">
-        <div className="relative h-16 w-16 overflow-hidden rounded-2xl">
+        <div className="relative h-14 w-14 overflow-hidden rounded-2xl sm:h-16 sm:w-16">
           {credential.imageUrl.endsWith(".svg") ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img

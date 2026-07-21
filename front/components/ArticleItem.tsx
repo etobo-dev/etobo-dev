@@ -17,33 +17,36 @@ export default function ArticleItem({ article, dict }: ArticleItemProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex min-w-0 gap-4 rounded-2xl border border-border bg-white p-4 transition-shadow hover:shadow-soft"
+      className="group block rounded-xl border border-border bg-white p-2.5 transition-shadow hover:shadow-soft sm:rounded-2xl sm:p-3.5"
     >
-      <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-dusty-rose">
-        <Image
-          src={article.imageUrl}
-          alt=""
-          fill
-          sizes="64px"
-          className="object-cover"
-        />
-      </div>
+      <div className="flex min-w-0 items-start gap-2.5 sm:gap-3">
+        <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-md bg-dusty-rose sm:h-14 sm:w-14 sm:rounded-lg">
+          <Image
+            src={article.imageUrl}
+            alt=""
+            fill
+            sizes="56px"
+            className="object-cover object-center"
+          />
+        </div>
 
-      <div className="min-w-0 flex-1">
-        <div className="flex items-start justify-between gap-2">
-          <h3 className="min-w-0 break-words text-sm font-bold leading-snug text-charcoal sm:text-base">
+        <div className="flex min-w-0 flex-1 items-start gap-1.5">
+          <h3 className="min-w-0 flex-1 break-words text-[0.8125rem] font-bold leading-snug text-charcoal sm:text-sm">
             {article.title}
           </h3>
           <ArrowRight
-            size={16}
+            size={14}
             className="mt-0.5 shrink-0 text-terracotta transition-transform group-hover:translate-x-0.5"
           />
         </div>
-        <p className="mt-1 line-clamp-2 text-sm text-body">{article.snippet}</p>
-        <p className="mt-2 text-xs text-body-muted">
-          {article.date} • {article.readingTime} {dict.articles.minRead}
-        </p>
       </div>
+
+      <p className="mt-2 line-clamp-2 text-xs leading-snug text-body sm:text-sm">
+        {article.snippet}
+      </p>
+      <p className="mt-1 text-[0.6875rem] leading-none text-body-muted">
+        {article.date} • {article.readingTime} {dict.articles.minRead}
+      </p>
     </a>
   );
 }

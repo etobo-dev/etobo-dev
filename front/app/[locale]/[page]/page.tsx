@@ -91,25 +91,27 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
     return (
       <>
         <PageShell title={meta.title} description={meta.description}>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-row flex-wrap gap-2">
             <Button
               href={buildOutboundUrl(socialLinks.github)}
               variant="secondary"
-              icon={<BrandIcon brand="github" size={16} />}
+              icon={<BrandIcon brand="github" size={14} />}
               external
+              className="min-h-9 px-3.5 py-1.5 text-xs sm:min-h-11 sm:px-5 sm:py-2.5 sm:text-sm"
             >
               {dict.projects.githubProfile}
             </Button>
             <Button
               href={buildOutboundUrl(socialLinks.gitlab)}
               variant="secondary"
-              icon={<BrandIcon brand="gitlab" size={16} />}
+              icon={<BrandIcon brand="gitlab" size={14} />}
               external
+              className="min-h-9 px-3.5 py-1.5 text-xs sm:min-h-11 sm:px-5 sm:py-2.5 sm:text-sm"
             >
               {dict.projects.gitlabProfile}
             </Button>
           </div>
-          <div className="mt-8 flex flex-col gap-4">
+          <div className="mt-5 flex flex-col gap-3 sm:mt-8 sm:gap-4">
             {projects.map((project) => (
               <ProjectCard
                 key={project.id}
@@ -139,7 +141,7 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
               {dict.articles.viewAll}
             </Button>
           </div>
-          <div className="mt-8 flex flex-col gap-4">
+          <div className="mt-8 flex flex-col gap-2 sm:gap-3">
             {articles.map((article) => (
               <ArticleItem
                 key={article.id}
@@ -158,7 +160,7 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
     return (
       <>
         <PageShell title={meta.title} description={meta.description}>
-          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:max-w-4xl">
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:max-w-4xl">
             {credentials.map((credential) => (
               <CredentialCard
                 key={credential.id}
@@ -238,19 +240,21 @@ export default async function DynamicPage({ params }: DynamicPageProps) {
         <PageShell title={meta.title} description={meta.description}>
           <div className="space-y-6">
             <p>{contact.body}</p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex w-full flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button
                 href={`mailto:${contact.email}`}
                 variant="primary"
                 icon={<Mail size={16} />}
+                className="w-full sm:w-auto"
               >
-                {contact.email}
+                {contact.emailLabel}
               </Button>
               <Button
                 href={buildOutboundUrl(socialLinks.linkedin)}
                 variant="secondary"
                 icon={<BrandIcon brand="linkedin" size={16} />}
                 external
+                className="w-full sm:w-auto"
               >
                 {contact.linkedinLabel}
               </Button>

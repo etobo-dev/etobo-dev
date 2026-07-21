@@ -47,7 +47,7 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
       </head>
-      <body className="min-h-full overflow-x-hidden bg-cream font-sans text-body">
+      <body className="min-h-full bg-cream font-sans text-body">
         {children}
       </body>
     </html>

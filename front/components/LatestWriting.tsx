@@ -19,7 +19,7 @@ export default function LatestWriting({ locale, dict }: LatestWritingProps) {
         linkLabel={dict.sections.viewAllArticles}
         linkHref={getLocalizedPath(locale, "articles")}
       />
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-2 sm:gap-3">
         {articles.map((article) => (
           <ArticleItem key={article.id} article={article} dict={dict} />
         ))}
