@@ -136,6 +136,20 @@ export function getPageKeyFromSlug(
   return null;
 }
 
+/** Resolve a page from either language slug (e.g. "cv" or "hoja-de-vida"). */
+export function getPageKeyFromAnySlug(slug: string): PageKey | null {
+  if (!slug) return "home";
+
+  for (const [key, paths] of Object.entries(localizedPaths) as [
+    PageKey,
+    (typeof localizedPaths)[PageKey],
+  ][]) {
+    if (paths.en === slug || paths.es === slug) return key;
+  }
+
+  return null;
+}
+
 export function getAlternateLocale(locale: Locale): Locale {
   return locale === "en" ? "es" : "en";
 }

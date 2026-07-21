@@ -1,9 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
-import { defaultLocale, isValidLocale } from "@/lib/i18n";
+import {
+  defaultLocale,
+  getLocalizedPath,
+  getPageKeyFromAnySlug,
+  isValidLocale,
+  type Locale,
+} from "@/lib/i18n";
 
 const LOCALE_COOKIE = "NEXT_LOCALE";
 
-function getPreferredLocale(request: NextRequest): string {
+function getPreferredLocale(request: NextRequest): Locale {
   const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
   if (cookieLocale && isValidLocale(cookieLocale)) return cookieLocale;
 
@@ -11,6 +17,11 @@ function getPreferredLocale(request: NextRequest): string {
   if (acceptLanguage?.toLowerCase().startsWith("es")) return "es";
 
   return defaultLocale;
+}
+
+function withLocaleCookie(response: NextResponse, locale: Locale) {
+  response.cookies.set(LOCALE_COOKIE, locale, { path: "/" });
+  return response;
 }
 
 export function proxy(request: NextRequest) {
@@ -29,17 +40,34 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const pathnameLocale = pathname.split("/")[1];
+  const segments = pathname.split("/").filter(Boolean);
+  const pathnameLocale = segments[0];
+
   if (isValidLocale(pathnameLocale)) {
-    const response = NextResponse.next();
-    response.cookies.set(LOCALE_COOKIE, pathnameLocale, { path: "/" });
-    return response;
+    const slug = segments[1] ?? "";
+    const pageKey = getPageKeyFromAnySlug(slug);
+    const canonicalPath = pageKey
+      ? getLocalizedPath(pathnameLocale, pageKey)
+      : `/${pathnameLocale}${slug ? `/${slug}` : ""}`;
+
+    if (pathname !== canonicalPath && pathname !== `${canonicalPath}/`) {
+      const url = request.nextUrl.clone();
+      url.pathname = canonicalPath;
+      return withLocaleCookie(NextResponse.redirect(url), pathnameLocale);
+    }
+
+    return withLocaleCookie(NextResponse.next(), pathnameLocale);
   }
 
   const locale = getPreferredLocale(request);
+  const slug = segments[0] ?? "";
+  const pageKey = getPageKeyFromAnySlug(slug);
   const url = request.nextUrl.clone();
-  url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
-  return NextResponse.redirect(url);
+  url.pathname = pageKey
+    ? getLocalizedPath(locale, pageKey)
+    : `/${locale}${pathname === "/" ? "" : pathname}`;
+
+  return withLocaleCookie(NextResponse.redirect(url), locale);
 }
 
 export const config = {
