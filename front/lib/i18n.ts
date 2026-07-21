@@ -26,6 +26,7 @@ export type Dictionary = {
     about: string;
     contact: string;
     cta: string;
+    downloadCv: string;
     menuOpen: string;
     menuClose: string;
   };

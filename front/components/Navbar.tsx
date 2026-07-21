@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import Button from "@/components/Button";
 import Container from "@/components/Container";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { getCv } from "@/lib/cv";
 import { linkedInMessageUrl } from "@/lib/links";
 import {
   getLocalizedPath,
@@ -42,6 +43,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const linkedInHref = buildOutboundUrl(linkedInMessageUrl);
+  const cv = getCv(locale);
 
   useEffect(() => {
     setOpen(false);
@@ -94,6 +96,14 @@ export default function Navbar({ locale, dict }: NavbarProps) {
 
         <div className="hidden items-center gap-3 md:flex">
           <LanguageSwitcher locale={locale} />
+          <Button
+            href={cv.href}
+            variant="secondary"
+            icon={<Download size={16} />}
+            external
+          >
+            {dict.nav.downloadCv}
+          </Button>
           <Button href={linkedInHref} variant="primary" external>
             {dict.nav.cta}
           </Button>
@@ -121,36 +131,45 @@ export default function Navbar({ locale, dict }: NavbarProps) {
           aria-label="Mobile"
         >
           <Container className="py-4">
-          <ul className="flex flex-col gap-1">
-            {navItems.map((page) => {
-              const active = isActive(pathname, locale, page);
-              return (
-                <li key={page}>
-                  <Link
-                    href={getLocalizedPath(locale, page)}
-                    onClick={() => setOpen(false)}
-                    className={`block rounded-lg px-3 py-2.5 text-sm font-medium ${
-                      active
-                        ? "bg-terracotta/10 text-terracotta"
-                        : "text-body hover:bg-beige/40"
-                    }`}
-                  >
-                    {navLabels[page]}
-                  </Link>
-                </li>
-              );
-            })}
-            <li className="pt-2">
-              <Button
-                href={linkedInHref}
-                variant="primary"
-                className="w-full"
-                external
-              >
-                {dict.nav.cta}
-              </Button>
-            </li>
-          </ul>
+            <ul className="flex flex-col gap-1">
+              {navItems.map((page) => {
+                const active = isActive(pathname, locale, page);
+                return (
+                  <li key={page}>
+                    <Link
+                      href={getLocalizedPath(locale, page)}
+                      onClick={() => setOpen(false)}
+                      className={`block rounded-lg px-3 py-2.5 text-sm font-medium ${
+                        active
+                          ? "bg-terracotta/10 text-terracotta"
+                          : "text-body hover:bg-beige/40"
+                      }`}
+                    >
+                      {navLabels[page]}
+                    </Link>
+                  </li>
+                );
+              })}
+              <li className="flex flex-col gap-2 pt-2">
+                <Button
+                  href={cv.href}
+                  variant="secondary"
+                  className="w-full"
+                  icon={<Download size={16} />}
+                  external
+                >
+                  {dict.nav.downloadCv}
+                </Button>
+                <Button
+                  href={linkedInHref}
+                  variant="primary"
+                  className="w-full"
+                  external
+                >
+                  {dict.nav.cta}
+                </Button>
+              </li>
+            </ul>
           </Container>
         </nav>
       )}
