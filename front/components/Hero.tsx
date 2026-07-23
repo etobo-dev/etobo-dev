@@ -23,29 +23,28 @@ function assetVersion(filename: string): number {
 }
 
 export default function Hero({ locale, dict }: HeroProps) {
-  const mobileBannerSrc = `/mobile-banner.png?v=${assetVersion("mobile-banner.png")}`;
-  const laptopBannerSrc = `/laptop-banner.png?v=${assetVersion("laptop-banner.png")}`;
+  const bannerSrc = `/laptop-banner.png?v=${assetVersion("laptop-banner.png")}`;
 
   return (
     <section className="relative overflow-hidden py-6 sm:min-h-[30rem] sm:py-14 lg:min-h-[32rem] lg:py-20">
       <div className="pointer-events-none absolute inset-0" aria-hidden>
         <Image
-          src={mobileBannerSrc}
+          src={bannerSrc}
           alt=""
           fill
           priority
           unoptimized
           sizes="100vw"
-          className="pointer-events-none object-contain object-right-bottom opacity-70 lg:hidden"
+          className="object-contain object-right-bottom lg:hidden"
         />
         <Image
-          src={laptopBannerSrc}
+          src={bannerSrc}
           alt=""
           fill
           priority
           unoptimized
-          sizes="100vw"
-          className="pointer-events-none hidden object-contain object-left-bottom lg:block"
+          sizes="(min-width: 1024px) 52rem, 100vw"
+          className="hidden object-contain object-right-bottom lg:block"
         />
       </div>
 
@@ -55,13 +54,13 @@ export default function Hero({ locale, dict }: HeroProps) {
             {dict.hero.label}
           </p>
 
-          <h1 className="text-[1.375rem] leading-[1.2] font-bold text-charcoal sm:text-3xl sm:leading-tight lg:text-5xl">
+          <h1 className="text-[1.375rem] leading-[1.2] font-bold text-[#1a100c] sm:text-3xl sm:leading-tight sm:text-charcoal lg:text-5xl">
             {dict.hero.headlineBefore}
             <span className="text-terracotta">{dict.hero.headlineHighlight}</span>
             {dict.hero.headlineAfter}
           </h1>
 
-          <p className="mt-2.5 max-w-[18rem] rounded-lg bg-cream/55 px-2 py-1.5 text-sm leading-snug text-body sm:mt-5 sm:max-w-xl sm:bg-transparent sm:px-0 sm:py-0 sm:text-base sm:leading-relaxed lg:text-lg">
+          <p className="mt-2.5 max-w-[18rem] rounded-lg bg-cream/55 px-2 py-1.5 text-sm leading-snug text-charcoal sm:mt-5 sm:max-w-xl sm:bg-transparent sm:px-0 sm:py-0 sm:text-base sm:leading-relaxed sm:text-body lg:text-lg">
             {dict.hero.subtext}
           </p>
 
