@@ -10,6 +10,17 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    id: "langchain-runnables-chains",
+    title: "Runnables and Chains in LangChain",
+    snippet:
+      "Calling a model is easy — the hard part is turning it into a flow. How LangChain Runnables and Chains help you prepare prompts, invoke models, parse output, and compose reusable steps.",
+    date: "Jul 26, 2026",
+    readingTime: 7,
+    href: "https://articles.etobo.tech/runnables-y-chains-en-langchain-14aab3db98f1",
+    imageUrl:
+      "https://cdn-images-1.medium.com/max/1024/1*hhZj92idLP2met1GiELkxQ.png",
+  },
+  {
     id: "world-cup-ai-2026",
     title:
       "How Artificial Intelligence Is Used at the 2026 World Cup: Sensors, Computer Vision, Data, and Tactical Analysis",
