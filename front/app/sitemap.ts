@@ -9,6 +9,7 @@ const pages: PageKey[] = [
   "credentials",
   "about",
   "contact",
+  "cv",
 ];
 
 function getPath(locale: Locale, page: PageKey): string {

@@ -9,6 +9,7 @@ export const localizedPaths = {
   credentials: { en: "credentials", es: "certificaciones" },
   about: { en: "about", es: "sobre-mi" },
   contact: { en: "contact", es: "contacto" },
+  cv: { en: "cv", es: "cv" },
 } as const;
 
 export type PageKey = keyof typeof localizedPaths;
@@ -104,6 +105,14 @@ export type Dictionary = {
       emailLabel: string;
       linkedinUrl: string;
       linkedinLabel: string;
+    };
+    cv: {
+      title: string;
+      description: string;
+      downloadEn: string;
+      downloadEs: string;
+      qrTitle: string;
+      qrHint: string;
     };
   };
 };

@@ -89,6 +89,14 @@
       "emailLabel": "Email",
       "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",
       "linkedinLabel": "LinkedIn"
+    },
+    "cv": {
+      "title": "CV / Resume",
+      "description": "Download my resume as a PDF — English or Spanish — or scan the QR code to open this page later.",
+      "downloadEn": "Download English PDF",
+      "downloadEs": "Download Spanish PDF",
+      "qrTitle": "QR code",
+      "qrHint": "Scan to open etobo.tech/cv on your phone."
     }
   }
 }

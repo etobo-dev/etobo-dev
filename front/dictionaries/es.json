@@ -89,6 +89,14 @@
       "emailLabel": "Correo",
       "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",
       "linkedinLabel": "LinkedIn"
+    },
+    "cv": {
+      "title": "Hoja de vida",
+      "description": "Descarga mi hoja de vida en PDF — inglés o español — o escanea el código QR para abrir esta página después.",
+      "downloadEn": "Descargar PDF en inglés",
+      "downloadEs": "Descargar PDF en español",
+      "qrTitle": "Código QR",
+      "qrHint": "Escanea para abrir etobo.tech/cv en tu teléfono."
     }
   }
 }
