@@ -13,12 +13,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default:
-      "Elver Tobo — Backend Software Engineer | Python | AWS | Security | AI",
+    default: "Elver Tobo — Cloud Architect | AWS | AI | Security",
     template: `%s — ${siteName}`,
   },
   description:
-    "Hire Elver Tobo — backend software engineer specializing in Python, FastAPI, AWS serverless, security, and practical AI. Open to remote roles.",
+    "Hire Elver Tobo — Cloud Architect focused on AWS architecture and artificial intelligence, with a security-first mindset. Open to remote roles.",
   applicationName: siteName,
   robots: {
     index: true,

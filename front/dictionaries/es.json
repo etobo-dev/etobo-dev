@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Elver Tobo — Ingeniero de Software Backend | Python | AWS | Seguridad | IA",
-    "description": "Contrata a Elver Tobo — ingeniero de software backend especializado en Python, FastAPI, AWS serverless, seguridad e IA práctica. Abierto a roles remotos. Portafolio: NotiCrypt y Knowforge."
+    "title": "Elver Tobo — Cloud Architect | AWS | IA | Seguridad",
+    "description": "Elver Tobo — Cloud Architect con foco en AWS e inteligencia artificial, y un fuerte enfoque en seguridad. Abierto a roles remotos. Portafolio: NotiCrypt y Knowforge."
   },
   "nav": {
     "home": "Inicio",
@@ -15,17 +15,17 @@
     "menuClose": "Cerrar menú"
   },
   "hero": {
-    "label": "PYTHON • BACKEND • AWS",
+    "label": "CLOUD ARCHITECT • AWS • IA",
     "headlineBefore": "",
-    "headlineHighlight": "Sistemas backend",
-    "headlineAfter": " con Python y servicios cloud de AWS.",
-    "subtext": "Entrega de punta a punta — APIs, servicios serverless e infraestructura cloud listos para producción y escala.",
+    "headlineHighlight": "Cloud e IA",
+    "headlineAfter": " — priorizando la seguridad en AWS.",
+    "subtext": "Seguridad de aplicaciones, ingeniería cloud e IA aplicada: software seguro, servicios serverless y sistemas inteligentes listos para producción.",
     "viewProjects": "Ver proyectos",
     "readArticles": "Leer artículos"
   },
   "profile": {
     "name": "Elver Tobo",
-    "title": "Ingeniero de Software | Python | AWS | Seguridad | IA",
+    "title": "Cloud Architect | AWS | IA | Seguridad",
     "email": "contact@etobo.tech",
     "github": "github.com/etobo-dev",
     "gitlab": "gitlab.com/elverytr",
@@ -66,7 +66,7 @@
   "pages": {
     "projects": {
       "title": "Proyectos",
-      "description": "Los productos principales que estoy desarrollando y llevando a producción — NotiCrypt y Knowforge."
+      "description": "Los productos principales que estoy construyendo y llevando a producción: NotiCrypt y Knowforge."
     },
     "articles": {
       "title": "Artículos",
@@ -78,13 +78,13 @@
     },
     "about": {
       "title": "Sobre mí",
-      "description": "Sobre Elver Tobo — ingeniero de software backend con más de 4 años construyendo sistemas Python, AWS serverless y cloud-native. Background en seguridad; abierto a roles remotos.",
-      "body": "Mi trayectoria incluye debugging en producción, desarrollo con enfoque en seguridad, infraestructura como código, automatización en la nube y diseño de servicios backend confiables. También uso Cursor para acelerar mi flujo de trabajo, mejorar la calidad del código, explorar soluciones y aumentar la velocidad de entrega, manteniendo criterio técnico y ownership del código.\n\nMi principal experiencia profesional ha sido en Fluid Attacks como Security Developer, donde desarrollé múltiples funcionalidades y pude trabajar en las áreas de analítica, ingeniería y gestión de incidentes.\n\nMe interesan especialmente los roles en los que pueda contribuir a sistemas escalables, mejorar la confiabilidad y construir software mantenible en entornos de producción.\n\nTambién estoy desarrollando expertise en sistemas de software asistidos por IA, incluyendo aplicaciones RAG y agentes de IA, con un enfoque práctico en usar IA para resolver problemas reales de negocio e ingeniería.\n\nComo hobby y parte de mi marca personal, me gusta escribir artículos en Medium. Si quieres leerlos, puedes encontrarlos en articles.etobo.tech.\n\nStack tecnológico: Cursor, Python, FastAPI, AWS Lambda, S3, EC2, RDS, DynamoDB, CloudWatch, ECS, Bedrock, API Gateway, EventBridge, SNS, SSM, Terraform, Docker, GitLab, Git, Bash, LangChain, LangGraph y LangSmith."
+      "description": "Sobre Elver Tobo — Cloud Architect con más de 4 años diseñando sistemas en AWS y soluciones de IA, con un fuerte enfoque en seguridad. Abierto a roles remotos.",
+      "body": "Soy Cloud Architect, con foco en AWS e inteligencia artificial. Hoy trabajo como Security Developer en Fluid Attacks, donde aplico un enfoque de seguridad a sistemas en la nube, infraestructura y entrega de software.\n\nMi experiencia incluye arquitectura cloud, infraestructura como código, plataformas serverless, depuración en producción, desarrollo seguro y diseño de servicios backend confiables. También uso Cursor para avanzar más rápido, mejorar la calidad del código, explorar alternativas y entregar con más velocidad, sin soltar el criterio técnico ni la responsabilidad sobre el resultado.\n\nEn Fluid Attacks he construido varias funcionalidades y he trabajado en analítica, ingeniería y gestión de incidentes.\n\nMe interesan roles donde pueda diseñar arquitecturas cloud seguras y escalables, integrar IA de forma útil, mejorar la confiabilidad y dejar sistemas mantenibles en producción.\n\nTrabajo con sistemas asistidos por IA — por ejemplo aplicaciones RAG y agentes — siempre con un enfoque práctico: resolver problemas reales de negocio e ingeniería.\n\nComo hobby y parte de mi marca personal, escribo en Medium. Si te interesa, puedes leer mis artículos en articles.etobo.tech.\n\nStack tecnológico: Cursor, Python, FastAPI, AWS Lambda, S3, EC2, RDS, DynamoDB, CloudWatch, ECS, Bedrock, API Gateway, EventBridge, SNS, SSM, Terraform, Docker, GitLab, Git, Bash, LangChain, LangGraph y LangSmith."
     },
     "contact": {
       "title": "Contacto",
-      "description": "Contacta a Elver Tobo — ingeniero backend (Python, AWS, seguridad, IA). Correo o LinkedIn para roles remotos, consultoría y colaboraciones.",
-      "body": "La mejor forma de contactarme es por correo o LinkedIn. Estoy abierto a colaboraciones, consultoría y oportunidades interesantes, y siempre me gusta hablar de sistemas backend, arquitectura cloud y herramientas de IA.",
+      "description": "Contacta a Elver Tobo — Cloud Architect con foco en AWS, IA y sistemas seguros. Correo o LinkedIn para roles remotos, consultoría y colaboraciones.",
+      "body": "La mejor forma de contactarme es por correo o LinkedIn. Estoy abierto a colaboraciones, consultoría y oportunidades interesantes. Me gusta hablar de arquitectura cloud en AWS, IA aplicada y diseño con foco en seguridad.",
       "email": "contact@etobo.tech",
       "emailLabel": "Correo",
       "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",
