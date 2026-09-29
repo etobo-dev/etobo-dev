@@ -10,8 +10,45 @@ export type Credential = {
   imageUrl: string;
 };
 
-/** Links verified via LinkedIn, Credly, Udemy, and issuer portals. */
 export const credentials: Credential[] = [
+  {
+    id: "lfel1012-secure-ai-ml",
+    type: "certification",
+    title: "LFEL1012: Secure AI/ML-Driven Software Development",
+    issuer: "The Linux Foundation / OpenSSF",
+    date: "Sep 2026",
+    href: "/credentials/lfel1012-secure-ai-ml.pdf",
+    imageUrl:
+      "https://images.credly.com/images/831b4845-11b7-4449-b157-19743f57107a/blob",
+  },
+  {
+    id: "skf100-owasp-top-10",
+    type: "certification",
+    title: "SKF100: Understanding the OWASP Top 10 Security Threats",
+    issuer: "The Linux Foundation",
+    date: "Sep 2026",
+    href: "/credentials/skf100-owasp-top-10.pdf",
+    imageUrl: "/credentials/openssf.svg",
+  },
+  {
+    id: "lfd121-secure-software",
+    type: "certification",
+    title: "LFD121: Developing Secure Software",
+    issuer: "The Linux Foundation / OpenSSF",
+    date: "Sep 2026",
+    href: "/credentials/lfd121-developing-secure-software.pdf",
+    imageUrl:
+      "https://images.credly.com/images/ee986187-6637-45e9-8184-8382dc117432/blob",
+  },
+  {
+    id: "claude-code-in-action",
+    type: "certification",
+    title: "Claude Code in Action",
+    issuer: "Claude Academy",
+    date: "Sep 2026",
+    href: "https://academy.claude.com/verify/8562a7137eddbe9cbdd1b95937b9ce32",
+    imageUrl: "/credentials/claude.svg",
+  },
   {
     id: "udemy-langchain-langgraph-agents",
     type: "certification",
@@ -41,16 +78,6 @@ export const credentials: Credential[] = [
     href: "https://courses.redteamleaders.com/exam-completion/7563923b97ada415",
     imageUrl:
       "https://images.coursestack.com/394acfd1-4fc9-46e4-9741-d3d88066d0e3",
-  },
-  {
-    id: "lfd121-secure-software",
-    type: "certification",
-    title: "LFD121: Developing Secure Software",
-    issuer: "The Linux Foundation",
-    date: "Aug 2024",
-    href: "https://www.credly.com/badges/2ae89f83-0cf9-4638-beac-99190db046c5/public_url",
-    imageUrl:
-      "https://images.credly.com/images/ee986187-6637-45e9-8184-8382dc117432/blob",
   },
   {
     id: "aws-cloud-practitioner",
