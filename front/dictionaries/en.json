@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Elver Tobo — Backend Software Engineer | Python | AWS | Security | AI",
-    "description": "Hire Elver Tobo — backend software engineer specializing in Python, FastAPI, AWS serverless, security, and practical AI. Open to remote roles. Portfolio: NotiCrypt & Knowforge."
+    "title": "Elver Tobo — Cloud Architect | AWS | AI | Security",
+    "description": "Hire Elver Tobo — Cloud Architect focused on AWS architecture and artificial intelligence, with a security-first mindset. Open to remote roles. Portfolio: NotiCrypt & Knowforge."
   },
   "nav": {
     "home": "Home",
@@ -15,17 +15,17 @@
     "menuClose": "Close menu"
   },
   "hero": {
-    "label": "PYTHON • BACKEND • AWS",
+    "label": "CLOUD ARCHITECT • AWS • AI",
     "headlineBefore": "",
-    "headlineHighlight": "Backend systems",
-    "headlineAfter": " with Python and AWS cloud services.",
-    "subtext": "End-to-end delivery — APIs, serverless services, and cloud infrastructure built to ship and scale.",
+    "headlineHighlight": "Cloud and AI",
+    "headlineAfter": " systems — with a security-first mindset on AWS.",
+    "subtext": "Application security, cloud engineering, and practical AI — secure software, serverless services, and intelligent systems built to ship and scale.",
     "viewProjects": "View Projects",
     "readArticles": "Read Articles"
   },
   "profile": {
     "name": "Elver Tobo",
-    "title": "Software Engineer | Python | AWS | Security | AI",
+    "title": "Cloud Architect | AWS | AI | Security",
     "email": "contact@etobo.tech",
     "github": "github.com/etobo-dev",
     "gitlab": "gitlab.com/elverytr",
@@ -78,13 +78,13 @@
     },
     "about": {
       "title": "About",
-      "description": "About Elver Tobo — backend software engineer with 4+ years building Python, AWS serverless, and cloud-native systems. Security background; open to remote roles.",
-      "body": "My background includes production debugging, security-focused development, infrastructure as code, cloud automation, and reliable backend service design. I also use Cursor to accelerate my development workflow, improve code quality, explore solutions, and increase delivery speed while maintaining technical judgment and ownership of the code.\n\nMy main professional experience has been at Fluid Attacks as a Security Developer, where I built multiple features and worked across analytics, engineering, and incident management.\n\nI'm especially interested in roles where I can contribute to scalable systems, improve reliability, and build maintainable software in production environments.\n\nI'm also developing expertise in AI-assisted software systems, including RAG applications and AI agents, with a practical focus on using AI to solve real business and engineering problems.\n\nAs a hobby and part of my personal brand, I enjoy writing articles on Medium. If you'd like to read them, you can find them at articles.etobo.tech.\n\nTech stack: Cursor, Python, FastAPI, AWS Lambda, S3, EC2, RDS, DynamoDB, CloudWatch, ECS, Bedrock, API Gateway, EventBridge, SNS, SSM, Terraform, Docker, GitLab, Git, Bash, LangChain, LangGraph, and LangSmith."
+      "description": "About Elver Tobo — Cloud Architect with 4+ years of experience designing AWS systems and practical AI solutions, with a security-first background. Open to remote roles.",
+      "body": "I position myself as a Cloud Architect focused on AWS and artificial intelligence. I currently work as a Security Developer at Fluid Attacks, where I bring a security-first mindset into cloud systems, infrastructure, and software delivery.\n\nMy background includes cloud architecture, infrastructure as code, serverless platforms, production debugging, secure software development, and reliable backend service design. I also use Cursor to accelerate my development workflow, improve code quality, explore solutions, and increase delivery speed while maintaining technical judgment and ownership of the code.\n\nAt Fluid Attacks I have built multiple features and worked across analytics, engineering, and incident management.\n\nI'm especially interested in roles where I can design secure, scalable cloud architectures, integrate practical AI, improve reliability, and ship maintainable systems in production.\n\nI work with AI-assisted software systems, including RAG applications and AI agents, with a practical focus on using AI to solve real business and engineering problems.\n\nAs a hobby and part of my personal brand, I enjoy writing articles on Medium. If you'd like to read them, you can find them at articles.etobo.tech.\n\nTech stack: Cursor, Python, FastAPI, AWS Lambda, S3, EC2, RDS, DynamoDB, CloudWatch, ECS, Bedrock, API Gateway, EventBridge, SNS, SSM, Terraform, Docker, GitLab, Git, Bash, LangChain, LangGraph, and LangSmith."
     },
     "contact": {
       "title": "Contact",
-      "description": "Contact Elver Tobo — backend engineer (Python, AWS, security, AI). Email or LinkedIn for remote roles, consulting, and collaborations.",
-      "body": "The best way to reach me is by email or LinkedIn. I'm open to collaborations, consulting, and interesting opportunities, and I'm always happy to talk about backend systems, cloud architecture, and AI tooling.",
+      "description": "Contact Elver Tobo — Cloud Architect focused on AWS, AI, and secure systems. Email or LinkedIn for remote roles, consulting, and collaborations.",
+      "body": "The best way to reach me is by email or LinkedIn. I'm open to collaborations, consulting, and interesting opportunities, and I'm always happy to talk about cloud architecture on AWS, practical AI systems, and security-minded design.",
       "email": "contact@etobo.tech",
       "emailLabel": "Email",
       "linkedinUrl": "https://www.linkedin.com/in/elver-tobo/",

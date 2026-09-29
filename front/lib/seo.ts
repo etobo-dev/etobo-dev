@@ -60,7 +60,7 @@ export function buildPageMetadata({
           url: "/profile.png",
           width: 512,
           height: 512,
-          alt: `${siteName} — Backend Software Engineer | Python | AWS | Security | AI`,
+          alt: `${siteName} — Cloud Architect | AWS | AI | Security`,
         },
       ],
     },
@@ -94,13 +94,10 @@ export function buildPageMetadata({
 export function buildPersonJsonLd(locale: Locale) {
   const description =
     locale === "es"
-      ? "Ingeniero de software backend con más de cuatro años de experiencia en Python, AWS, serverless, seguridad de aplicaciones e IA práctica. Creador de NotiCrypt y Knowforge. Abierto a roles remotos y colaboraciones."
-      : "Backend software engineer with more than four years of experience in Python, AWS, serverless, application security, and practical AI. Builder of NotiCrypt and Knowforge. Open to remote roles and collaborations.";
+      ? "Cloud Architect con más de cuatro años de experiencia en arquitectura AWS e inteligencia artificial, con un fuerte enfoque en seguridad. Creador de NotiCrypt y Knowforge. Abierto a roles remotos y colaboraciones."
+      : "Cloud Architect with more than four years of experience, focused on AWS architecture and artificial intelligence, with a security-first mindset. Builder of NotiCrypt and Knowforge. Open to remote roles and collaborations.";
 
-  const jobTitle =
-    locale === "es"
-      ? "Ingeniero de Software Backend"
-      : "Backend Software Engineer";
+  const jobTitle = "Cloud Architect";
 
   return {
     "@context": "https://schema.org",
@@ -137,11 +134,6 @@ export function buildPersonJsonLd(locale: Locale) {
             alternateName: "es",
           },
         ],
-        alumniOf: {
-          "@type": "Organization",
-          name: "Fluid Attacks",
-          url: "https://fluidattacks.com",
-        },
         hasCredential: [
           {
             "@type": "EducationalOccupationalCredential",
@@ -164,7 +156,8 @@ export function buildPersonJsonLd(locale: Locale) {
         ],
         worksFor: {
           "@type": "Organization",
-          name: "Independent",
+          name: "Fluid Attacks",
+          url: "https://fluidattacks.com",
         },
       },
       {
